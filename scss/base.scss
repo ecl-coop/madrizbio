@@ -1,0 +1,10 @@
+/*body{
+    min-width: 100%;
+    min-height: 101%;
+}*/
+.container{
+    -ms-scroll-snap-type: mandatory;
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}

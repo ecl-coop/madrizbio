@@ -1,0 +1,17 @@
+@import "base.scss";
+@import "../node_modules/include-media/dist/include-media.scss";
+@import "variables.scss";
+@import "utilities/mixins.scss";
+//elements
+@import "elements/typography.scss";
+@import "elements/images";
+@import "elements/lists";
+///sections
+@import "sections/intro";
+@import "sections/objetivos";
+@import "sections/oferta";
+@import "sections/mapa-tiendas";
+@import "sections/directorio";
+@import "sections/unirte";
+@import "sections/contacto";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

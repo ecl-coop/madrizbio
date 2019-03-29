@@ -1,0 +1,66 @@
+.text{
+    font-family: var(--font-primary);
+    line-height: 1.66;
+    font-weight: 400;
+    &-1{
+        font-size: 1.25rem;
+        background-color: $blanco;
+    }
+    &-2{
+        font-size: .875rem;
+    }
+    &-3{
+        font-family: $font-serif;
+        color: $verde;
+    }
+    @include media(">=desktop") {
+        &-1 {
+            font-size: 2rem;
+        }
+
+        &-2 {
+            font-size: 1.5rem;
+            font-weight: 200;
+        }
+
+        &-3 {}
+    }
+}
+
+.heading{
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    line-height: .95;
+    &-1{
+        font-size: 3.375rem;
+        font-weight: 800;
+
+    }
+    &-2{
+        font-size: 3.375rem;
+        font-weight: 100;
+    }
+    &-3{
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    &-4{
+        font-family: $font-sans;
+        font-weight: 800;
+        font-size: 1.25rem;
+    }
+    @include media(">=desktop"){
+        &-1 {
+            font-size: 3rem;
+
+        }
+
+        &-2 {
+            font-size: 2.5rem;
+        }
+
+        &-3 {}
+
+        &-4 {}
+    }
+}

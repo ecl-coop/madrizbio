@@ -1,0 +1,19 @@
+#oferta{
+    @include section-default;
+    padding-top: 15rem;
+    &::before{
+        @include pseudo-absolute;
+        background: url("/img/hoja-2_crop.png") no-repeat right;
+        top: -75%;
+        background-position-x: -370px;
+    }
+    &::after{
+        @include pseudo-absolute;
+        background: url("/img/rama-1.svg") no-repeat center;
+        background-position-y: top;
+    }
+    .heading{
+        color: $rojo;
+        padding-bottom: 7.5rem;
+    }
+}  

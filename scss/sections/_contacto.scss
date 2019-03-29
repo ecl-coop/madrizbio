@@ -1,0 +1,27 @@
+#contacto{
+    @include section-default;
+    justify-content: flex-start;
+
+    form{
+        background-color: $blanco;
+        @include flex-column;
+        z-index: 10;
+        border: 5px solid $verde;
+        padding: 2rem;
+        min-height: 520px;
+    }
+    footer.row{
+        background-color: $verde;
+        @include flex-column;
+        min-width: 100vw;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        height: 550px;
+        .logo{
+            padding-top: 40%;
+        }
+    }
+}
