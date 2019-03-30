@@ -1,10 +1,15 @@
-/*body{
-    min-width: 100%;
-    min-height: 101%;
-}*/
-.container{
-    -ms-scroll-snap-type: mandatory;
-    scroll-snap-type: mandatory;
-    scroll-snap-type: y mandatory;
+body{
+    //min-width: 100%;
+    //min-height: 101%;
+    overflow-x: hidden;
+}
+.container-fluid{
+    -ms-scroll-snap-type: proximity;
+    scroll-snap-type: proximity;
+    scroll-snap-type: y proximity;
+    overflow-x: hidden;
     overflow-y: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
 }

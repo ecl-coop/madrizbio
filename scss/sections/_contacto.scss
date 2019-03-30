@@ -1,6 +1,10 @@
 #contacto{
     @include section-default;
     justify-content: flex-start;
+    max-width: unset;
+    padding-bottom: 0;
+    margin-top: -260px;
+    scroll-margin-top: -260px;
 
     form{
         background-color: $blanco;
@@ -9,19 +13,55 @@
         border: 5px solid $verde;
         padding: 2rem;
         min-height: 520px;
+        font-family: $font-sans;
+        width: 100%;
+        min-width: 344px;
+        max-width: 790px;
+        position: relative;
+        top: 260px;
+        .custom-control{
+            font-size: .875rem;
+        }
+        .form-group{
+            label{
+                font-size: .75rem;
+                font-weight: 100;
+                letter-spacing: .1em;
+                margin-bottom: 4px;
+            }
+        }
+        .form-control{
+            &:target{
+                filter: drop-shadow(2px 2px 2px $rojo);
+                border: 2px solid $rojo;
+            }
+        }
+    }
+    .form-header{
+        @include flex-column;
+        align-items: center;
     }
     footer.row{
         background-color: $verde;
         @include flex-column;
-        min-width: 100vw;
+        width: 100%;
         align-items: center;
-        justify-content: center;
-        position: absolute;
-        bottom: 0;
-        margin: 0;
+        justify-content: flex-end;
         height: 550px;
+        padding-bottom: 3rem;
+        position: relative;
+        &::before{
+            @include pseudo-absolute;
+            height: 100%;
+            background-color: $verde;
+            bottom: 0;
+        }
         .logo{
-            padding-top: 40%;
+            padding-bottom: .5rem;
+            width: 10rem;
+            img{
+                
+            }
         }
     }
 }

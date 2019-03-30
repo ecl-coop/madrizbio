@@ -1,5 +1,6 @@
 #mapa-tiendas {
     background-color: $negro;
+    scroll-snap-align: start;
     @include flex-column;
 
     .heading {

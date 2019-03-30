@@ -1,6 +1,7 @@
 #oferta{
     @include section-default;
     padding-top: 15rem;
+    scroll-margin-top: -15rem;
     &::before{
         @include pseudo-absolute;
         background: url("/img/hoja-2_crop.png") no-repeat right;
@@ -11,9 +12,20 @@
         @include pseudo-absolute;
         background: url("/img/rama-1.svg") no-repeat center;
         background-position-y: top;
+        filter: blur(4px);
     }
     .heading{
         color: $rojo;
         padding-bottom: 7.5rem;
+    }
+    @include media(">=desktop"){
+        &::before{
+            background: url("/img/hoja-2_desktop.png") no-repeat left;
+            top: -30%;
+            //background-position-x: left;
+        }
+        .heading{
+            align-self: flex-start;
+        }
     }
 }  

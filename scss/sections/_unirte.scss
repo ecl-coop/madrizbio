@@ -1,3 +1,32 @@
 #unirte{
     @include section-default;
+    padding-top: 15rem;
+    scroll-margin-top: -15rem;
+        &::before {
+            @include pseudo-absolute;
+            background: url("/img/hoja-4.png") no-repeat top;
+            background-position-x: 80vw;
+        }
+    &::after {
+        @include pseudo-absolute;
+        background: url("/img/rama-2.svg") no-repeat center;
+        background-position-y: top;
+        filter: blur(4px);
+    }
+    .heading{
+        color: $verde;
+    }
+
+    @include media(">=desktop") {
+        .heading {
+            align-self: flex-start;
+            color: $rojo;
+        }
+        .text{
+            align-self: flex-start;
+        }
+        &::after{
+            height: 160%;
+        }
+    }
 }

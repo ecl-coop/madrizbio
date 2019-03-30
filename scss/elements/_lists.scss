@@ -17,9 +17,14 @@
             margin-top: -50px;
         }
     }
-        @include media(">=desktop") {
-            flex-direction: row;
+    @include media(">=desktop") {
+        flex-direction: row;
+        justify-content: flex-end;
+        &-item{
+            max-width: 40%;
+            padding-left: 10em;
         }
+    }
 }
 
 .list-2 {
@@ -35,8 +40,23 @@
         &:not(:last-of-type) {
             margin-bottom: 1.625rem;
         }
+        .list-2-text {
+            min-width: 248px;
+            max-width: 360px;
+        }
     }
         @include media(">=desktop") {
             flex-direction: row;
+            justify-content: flex-end;
+            //padding-left: 25%;
+            &-item{
+                flex-direction: row;
+                text-align: left;
+                flex: 0 0 auto;
+                justify-content: flex-end;
+                img{
+                    flex: 0 0 auto;
+                }
+            }
         }
 }

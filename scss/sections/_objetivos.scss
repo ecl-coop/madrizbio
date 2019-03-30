@@ -1,4 +1,13 @@
 #objetivos {
     @include section-default;
-        
+        @include media(">=desktop"){
+            justify-content: center;
+            padding-left: 25%;
+            padding-right: 16%;
+            .text{
+                //max-width: 80%;
+                align-self: flex-start;
+                margin-bottom: 4em;
+            }
+        }
 }

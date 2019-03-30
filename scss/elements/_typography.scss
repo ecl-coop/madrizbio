@@ -7,23 +7,31 @@
         background-color: $blanco;
     }
     &-2{
-        font-size: .875rem;
+        font-size: 1rem;
     }
     &-3{
+        font-size: .875rem;
+    }
+    &-4{
         font-family: $font-serif;
         color: $verde;
     }
     @include media(">=desktop") {
         &-1 {
             font-size: 2rem;
+            line-height: 1.4375;
         }
-
         &-2 {
             font-size: 1.5rem;
-            font-weight: 200;
         }
-
-        &-3 {}
+        &-3 {
+            font-size: 1.125rem;
+            font-weight: 100;
+        }
+        &-4{
+            font-size: 1.125rem;
+            font-weight: 400;
+        }
     }
 }
 
@@ -51,12 +59,13 @@
     }
     @include media(">=desktop"){
         &-1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
 
         }
 
         &-2 {
-            font-size: 2.5rem;
+            font-size: 6.875rem;
+            display: block;
         }
 
         &-3 {}
