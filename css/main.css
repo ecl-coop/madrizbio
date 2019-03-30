@@ -308,7 +308,8 @@ body {
     z-index: -1;
     background: url("/img/rama-1.svg") no-repeat center;
     background-position-y: top;
-    filter: blur(4px); }
+    filter: blur(4px);
+    z-index: -2; }
   #oferta .heading {
     color: var(--brand-red);
     padding-bottom: 7.5rem; }

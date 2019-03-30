@@ -13,6 +13,7 @@
         background: url("/img/rama-1.svg") no-repeat center;
         background-position-y: top;
         filter: blur(4px);
+        z-index: -2;
     }
     .heading{
         color: $rojo;
