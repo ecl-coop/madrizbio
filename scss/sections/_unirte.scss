@@ -15,6 +15,7 @@
     }
     .heading{
         color: $verde;
+        margin-bottom: 1em;
     }
 
     @include media(">=desktop") {

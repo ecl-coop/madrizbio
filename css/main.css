@@ -77,10 +77,15 @@ body {
 .img-1 {
   width: 9rem;
   height: 9rem;
+  border-radius: 50%;
+  object-fit: cover;
   font-size: .5rem;
   font-weight: 400;
-  color: gray;
-  border: 1px solid black; }
+  color: gray; }
+  @media (min-width: 1024px) {
+    .img-1 {
+      width: 10rem;
+      height: 10rem; } }
 
 .img-2 {
   width: 6rem;
@@ -88,7 +93,7 @@ body {
   font-size: .5rem;
   font-weight: 400;
   color: gray;
-  border: 1px solid black; }
+  fill: var(--brand-green); }
 
 .logo {
   display: flex;
@@ -320,7 +325,8 @@ body {
     filter: blur(4px);
     z-index: -2; }
   #oferta .heading {
-    color: var(--brand-red); }
+    color: var(--brand-red);
+    margin-bottom: 1em; }
   @media (min-width: 1024px) {
     #oferta::before {
       background: url("/img/hoja-2_desktop.png") no-repeat left;
@@ -395,7 +401,8 @@ body {
     background-position-y: top;
     filter: blur(4px); }
   #unirte .heading {
-    color: var(--brand-green); }
+    color: var(--brand-green);
+    margin-bottom: 1em; }
   @media (min-width: 1024px) {
     #unirte .heading {
       align-self: flex-start;

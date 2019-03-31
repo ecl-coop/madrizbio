@@ -1,12 +1,19 @@
 .img-1{
     width: 9rem;
     height: 9rem;
+    border-radius: 50%;
+    object-fit: cover;
     @include img-alt;
+    @include media(">=desktop"){
+        width: 10rem;
+        height: 10rem;
+    }
 }
 .img-2 {
     width: 6rem;
     height: 6rem;
     @include img-alt;
+    fill: $verde
 }
 
 .logo {
