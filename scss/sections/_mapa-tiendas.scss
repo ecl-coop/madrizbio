@@ -2,7 +2,7 @@
     background-color: $negro;
     scroll-snap-align: start;
     @include flex-column;
-
+    margin-top: 10rem;
     .heading {
         @include flex-column;
         justify-content: center;
@@ -10,6 +10,13 @@
         text-transform: none;
         line-height: 1.1;
         color: $blanco;
+        position: relative;
+        &::before {
+            @include pseudo-absolute;
+            background: url(/img/hoja-3.png) no-repeat center;
+            top: -100%;
+            height: 200%;
+        }
     }
     i{
         color: $rojo;

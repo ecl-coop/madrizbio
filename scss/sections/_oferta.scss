@@ -1,6 +1,6 @@
 #oferta{
     @include section-default;
-    padding-top: 15rem;
+    margin-top: 15rem;
     scroll-margin-top: -15rem;
     &::before{
         @include pseudo-absolute;
@@ -17,13 +17,16 @@
     }
     .heading{
         color: $rojo;
-        padding-bottom: 7.5rem;
+        //padding-bottom: 7.5rem;
     }
     @include media(">=desktop"){
         &::before{
             background: url("/img/hoja-2_desktop.png") no-repeat left;
-            top: -30%;
-            //background-position-x: left;
+            top: 0;
+            left: 0;
+            margin-left: -230px;
+            margin-top: -15rem;
+            background-position-y: bottom;
         }
         .heading{
             align-self: flex-start;

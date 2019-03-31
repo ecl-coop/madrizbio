@@ -40,6 +40,9 @@
     .form-header{
         @include flex-column;
         align-items: center;
+        .heading{
+            color: $rojo;
+        }
     }
     footer.row{
         background-color: $verde;
@@ -59,9 +62,6 @@
         .logo{
             padding-bottom: .5rem;
             width: 10rem;
-            img{
-                
-            }
         }
     }
 }

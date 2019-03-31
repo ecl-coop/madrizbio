@@ -16,6 +16,9 @@
         .heading-4 {
             margin-top: -50px;
         }
+        .text{
+            max-width: 420px;
+        }
     }
     @include media(">=desktop") {
         flex-direction: row;
@@ -23,6 +26,10 @@
         &-item{
             max-width: 40%;
             padding-left: 10em;
+            padding-right: 2em;
+            .text{
+                max-width: auto;
+            }
         }
     }
 }

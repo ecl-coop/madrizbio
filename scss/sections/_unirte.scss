@@ -1,6 +1,6 @@
 #unirte{
     @include section-default;
-    padding-top: 15rem;
+    margin-top: 15rem;
     scroll-margin-top: -15rem;
         &::before {
             @include pseudo-absolute;

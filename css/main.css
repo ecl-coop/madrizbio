@@ -68,7 +68,11 @@ body {
       font-size: 3.5rem; }
     .heading-2 {
       font-size: 6.875rem;
-      display: block; } }
+      display: block; }
+    .heading-3 {
+      font-size: 3.5rem;
+      font-weight: 100;
+      letter-spacing: .015em; } }
 
 .img-1 {
   width: 9rem;
@@ -112,13 +116,18 @@ body {
       clip-path: polygon(100% 0, 100% 53%, 50% 53%, 50% 100%, 0 100%, 0 0); }
     .list-1-item .heading-4 {
       margin-top: -50px; }
+    .list-1-item .text {
+      max-width: 420px; }
   @media (min-width: 1024px) {
     .list-1 {
       flex-direction: row;
       justify-content: flex-end; }
       .list-1-item {
         max-width: 40%;
-        padding-left: 10em; } }
+        padding-left: 10em;
+        padding-right: 2em; }
+        .list-1-item .text {
+          max-width: auto; } }
 
 .list-2 {
   display: flex;
@@ -289,7 +298,7 @@ body {
   position: relative;
   overflow: visible;
   scroll-snap-align: start;
-  padding-top: 15rem;
+  margin-top: 15rem;
   scroll-margin-top: -15rem; }
   #oferta::before {
     content: "";
@@ -311,12 +320,15 @@ body {
     filter: blur(4px);
     z-index: -2; }
   #oferta .heading {
-    color: var(--brand-red);
-    padding-bottom: 7.5rem; }
+    color: var(--brand-red); }
   @media (min-width: 1024px) {
     #oferta::before {
       background: url("/img/hoja-2_desktop.png") no-repeat left;
-      top: -30%; }
+      top: 0;
+      left: 0;
+      margin-left: -230px;
+      margin-top: -15rem;
+      background-position-y: bottom; }
     #oferta .heading {
       align-self: flex-start; } }
 
@@ -324,7 +336,8 @@ body {
   background-color: var(--black);
   scroll-snap-align: start;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-top: 10rem; }
   #mapa-tiendas .heading {
     display: flex;
     flex-direction: column;
@@ -332,7 +345,17 @@ body {
     height: 12.5rem;
     text-transform: none;
     line-height: 1.1;
-    color: var(--white); }
+    color: var(--white);
+    position: relative; }
+    #mapa-tiendas .heading::before {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 120%;
+      z-index: -1;
+      background: url(/img/hoja-3.png) no-repeat center;
+      top: -100%;
+      height: 200%; }
   #mapa-tiendas i {
     color: var(--brand-red);
     margin-top: 1rem; }
@@ -352,7 +375,7 @@ body {
   position: relative;
   overflow: visible;
   scroll-snap-align: start;
-  padding-top: 15rem;
+  margin-top: 15rem;
   scroll-margin-top: -15rem; }
   #unirte::before {
     content: "";
@@ -427,6 +450,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    #contacto .form-header .heading {
+      color: var(--brand-red); }
   #contacto footer.row {
     background-color: var(--brand-green);
     display: flex;
