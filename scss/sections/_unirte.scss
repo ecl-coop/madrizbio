@@ -1,7 +1,7 @@
 #unirte{
     @include section-default;
-    margin-top: 15rem;
-    scroll-margin-top: -15rem;
+    //scroll-margin-top: -15rem;
+    margin-bottom: 260px;
         &::before {
             @include pseudo-absolute;
             background: url("/img/hoja-4.png") no-repeat top;

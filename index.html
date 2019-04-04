@@ -12,9 +12,27 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,400,700|Roboto+Slab:100,400,700" rel="stylesheet">
 </head>
-
 <body>
     <div class="container-fluid">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="/img/logo_min.svg" width="30" height="30"
+                    class="d-inline-block align-top" alt="">
+                MB
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#intro">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#oferta">Conócenos</a>
+                    <a class="nav-item nav-link" href="#mapa-tiendas">Ubícanos</a>
+                    <a class="nav-item nav-link" href="#contacto">Contáctanos</a>
+                </div>
+            </div>
+        </nav>
         <section class="row" id="intro">
             <div class="logo">
                 <img class="img-fluid" src="/img/madbi_logo.svg" alt="MadrizBio Logo">
@@ -139,10 +157,283 @@
         </section>
         <section class="row" id="directorio">
             <div class="card-group">
-                <h5>Fuenlabrada</h5>
+                <h5 class="heading heading-5">Alorcón</h5>
                 <div class="card ficha-tienda">
-                    <h5 class="heading-5">Nombre de la tienda</h5>
-                    <address>Dirección de la tienda</address>
+                    <div class="card-picture">
+                        <picture class="d-md-none 
+                        d-lg-block img-3">
+                            <img src="/img/cards-tiendas/alma-ecologica-en-alcorcon.jpg" alt="" class="img-fluid">
+                        </picture>
+                    </div>
+                    <h6 class="heading heading-6"><a href="">Alma Ecológica</a></h5>
+                    <address class="text-5">Av. del Oeste, 27. 28922</address>
+                    <div class="tienda-social">
+                        <i class="fab fa-twitter-square"></i><i class="fab fa-facebook"></i><i class="fas fa-phone-square"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <h5 class="heading heading-5">Aranjuez</h5>
+                <div class="card ficha-tienda">
+                    <div class="card-picture">
+                        <picture class="d-none d-lg-flex img-3">
+                            <img src="/img/cards-tiendas/alma-ecologica-en-alcorcon.jpg" alt="" class="img-fluid">
+                        </picture>
+                    </div>
+                    <h6 class="heading heading-6"><a href="https://www.ecoalimentacionaranjuez.es">Ecoalimentación</a></h5>
+                    <address class="text-5">Av. Plaza de Toros, 14</address>
+                    <div class="tienda-social">
+                        <i class="fab fa-twitter-square"></i><i class="fab fa-facebook"></i><i class="fas fa-phone-square"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <h5 class="heading heading-5">Arganda del Rey</h5>
+                <div class="card ficha-tienda">
+                    <div class="card-picture">
+                        <picture class="img-3 d-none d-lg-flex">
+                            <img src="/img/cards-tiendas/tu-rincon-ecologico.jpeg" alt="" class="img-fluid">
+                        </picture>
+                    </div>
+                    <h6 class="heading heading-6"><a href="https://turinconecologico.com">Tu Rincón Ecológico</a></h6>
+                    <address class="text-5">C/ Portal de Belen, 35, local 2ª</address>
+                    <div class="tienda-social">
+                        <i class="fab fa-twitter-square"></i><i class="fab fa-facebook"></i><i class="fas fa-phone-square"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <h5 class="heading heading-5">Collado Villalba</h5>
+                <div class="card ficha-tienda">
+                    <div class="card-picture">
+                        <picture class="img-3 d-none d-lg-flex">
+                            <img src="/img/cards-tiendas/tu-rincon-ecologico.jpeg" alt="" class="img-fluid">
+                        </picture>
+                    </div>
+                    <h6 class="heading heading-6"><a
+                            href="https://www.facebook.com/pg/Tu-Ecol%C3%B3gica-832092570174340/about">Tu Ecológica</a>
+                    </h6>
+                    <address class="text-5">C/ Lola Gaos, s/n, local 5</address>
+                    <div class="tienda-social">
+                        <i class="fab fa-twitter-square"></i><i class="fab fa-facebook"></i><i class="fas fa-phone-square"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <h5 class="heading heading-5">Fuenlabrada</h5>
+                <div class="card ficha-tienda">
+                    <div class="card-picture">
+                        <picture class="img-3 d-none d-lg-flex">
+                            <img src="/img/cards-tiendas/tu-rincon-ecologico.jpeg" alt="" class="img-fluid">
+                        </picture>
+                    </div>
+                    <h6 class="heading heading-6"><a href="http://lalechuga.es">Ecotienda la Lechuga</a></h6>
+                    <address class="text-5">C/ de la Lechuga, 1</address>
+                    <div class="tienda-social">
+                        <i class="fab fa-twitter-square"></i><i class="fab fa-facebook"></i><i class="fas fa-phone-square"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <h5 class="heading heading-5">Getafe</h5>
+                <div class="card ficha-tienda">
+                    <div class="card-picture">
+                        <picture class="img-3 d-none d-lg-flex">
+                            <img src="/img/cards-tiendas/tu-rincon-ecologico.jpeg" alt="" class="img-fluid">
+                        </picture>
+                    </div>
+                    <h6 class="heading heading-6"><a href="http://biolibere.es">Biolibere</a></h6>
+                    <address class="text-5">C/ Giralda, s/n</address>
+                    <div class="tienda-social">
+                        <i class="fab fa-twitter-square"></i><i class="fab fa-facebook"></i><i class="fas fa-phone-square"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <h5 class="heading heading-5">Leganés</h5>
+                <div class="card ficha-tienda">
+                    <div class="card-picture">
+                        <picture class="img-3 d-none d-lg-flex">
+                            <img src="/img/cards-tiendas/tu-rincon-ecologico.jpeg" alt="" class="img-fluid">
+                        </picture>
+                    </div>
+                    <h6 class="heading heading-6"><a href="https://mercaditoalegriadelahuerta.com">Mercadito Natural Alegría de
+                            la Huerta</a></h6>
+                    <address class="text-5">C/ Del Pensamiento, 7</address>
+                    <div class="tienda-social">
+                        <i class="fab fa-twitter-square"></i><i class="fab fa-facebook"></i><i class="fas fa-phone-square"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group" id="madrid">                
+                <h5 class="heading heading-5">Madrid</h5>
+                <div class="card ficha-tienda">
+                    <div class="card-picture">
+                        <picture class="img-3 d-none d-lg-flex">
+                            <img src="/img/cards-tiendas/2decologico.jpg" alt="" class="img-fluid">
+                        </picture>
+                    </div>
+                    <h6 class="heading heading-6"><a href="http://2decologico.org">2decológico</a></h6>
+                    <address class="text-5">C/ Noviciado, 9</address>
+                    <div class="tienda-social">
+                        <i class="fab fa-twitter-square"></i><i class="fab fa-facebook"></i><i class="fas fa-phone-square"></i>
+                    </div>
+                </div>
+                <div class="card ficha-tienda">
+                    <div class="card-picture">
+                        <picture class="img-3 d-none d-lg-flex">
+                            <img src="/img/cards-tiendas/2decologico.jpg" alt="" class="img-fluid">
+                        </picture>
+                    </div>
+                    <h6 class="heading heading-6"><a href="http://www.albahacaecotienda.com">Albahaca Ecotienda</a></h6>
+                    <address class="text-5">C/ Moratines, 16, local 3 bis</address>
+                    <div class="tienda-social">
+                        <i class="fab fa-twitter-square"></i><i class="fab fa-facebook"></i><i class="fas fa-phone-square"></i>
+                    </div>
+                </div>
+                <div class="card ficha-tienda">
+                    <div class="card-picture">
+                        <picture class="img-3 d-none d-lg-flex">
+                            <img src="/img/cards-tiendas/2decologico.jpg" alt="" class="img-fluid">
+                        </picture>
+                    </div>
+                    <h6 class="heading heading-6"><a href="http://www.artesanosdelsabor.es">Artesanos del Sabor</a></h6>
+                    <address class="text-5">C/ Corregidor Alonso de Tobar, 16</address>
+                    <div class="tienda-social">
+                        <i class="fab fa-twitter-square"></i><i class="fab fa-facebook"></i><i class="fas fa-phone-square"></i>
+                    </div>
+                </div>
+                <div class="card ficha-tienda">
+                    <div class="card-picture">
+                        <picture class="img-3 d-none d-lg-flex">
+                            <img src="/img/cards-tiendas/2decologico.jpg" alt="" class="img-fluid">
+                        </picture>
+                    </div>
+                    <h6 class="heading heading-6"><a href="https://www.detrasdelarbol.org">Detrás del árbol</a></h6>
+                    <address class="text-5">C/ Corregidor José de Pasamonte, 14</address>
+                    <div class="tienda-social">
+                        <i class="fab fa-twitter-square"></i><i class="fab fa-facebook"></i><i class="fas fa-phone-square"></i>
+                    </div>
+                </div>
+                <div class="card ficha-tienda">
+                    <div class="card-picture">
+                        <picture class="img-3 d-none d-lg-flex">
+                            <img src="/img/cards-tiendas/2decologico.jpg" alt="" class="img-fluid">
+                        </picture>
+                    </div>
+                    <h6 class="heading heading-6"><a href="https://www.mercadobueno.es/es">El Mercado Bueno</a></h6>
+                    <address class="text-5">C/ Narváez, 59</address>
+                    <div class="tienda-social">
+                        <i class="fab fa-twitter-square"></i><i class="fab fa-facebook"></i><i class="fas fa-phone-square"></i>
+                    </div>
+                </div>
+                <div class="card ficha-tienda">
+                    <div class="card-picture">
+                        <picture class="img-3 d-none d-lg-flex">
+                            <img src="/img/cards-tiendas/2decologico.jpg" alt="" class="img-fluid">
+                        </picture>
+                    </div>
+                    <h6 class="heading heading-6"><a href="https://esderaiz.com">Es de Raíz</a></h6>
+                    <address class="text-5">Santa María de la Cabeza, 41 (Mercado Municipal Sta. María de la Cabeza)</address>
+                    <div class="tienda-social">
+                        <i class="fab fa-twitter-square"></i><i class="fab fa-facebook"></i><i class="fas fa-phone-square"></i>
+                    </div>
+                </div>
+                <div class="card ficha-tienda">
+                    <div class="card-picture">
+                        <picture class="img-3 d-none d-lg-flex">
+                            <img src="/img/cards-tiendas/la-tienda-de-la-abuela.jpg" alt="" class="img-fluid">
+                        </picture>
+                    </div>
+                    <h6 class="heading heading-6"><a href="https://www.latiendadelaabuela.com">La Tienda de la Abuela</a></h6>
+                    <address class="text-5">C/ Sierra Morena, 31</address>
+                    <div class="tienda-social">
+                        <i class="fab fa-twitter-square"></i><i class="fab fa-facebook"></i><i class="fas fa-phone-square"></i>
+                    </div>
+                </div>
+                <div class="card ficha-tienda">
+                    <div class="card-picture">
+                        <picture class="img-3 d-none d-lg-flex">
+                            <img src="/img/cards-tiendas/2decologico.jpg" alt="" class="img-fluid">
+                        </picture>
+                    </div>
+                    <h6 class="heading heading-6"><a href="http://www.tomatomates.es">Tomatomates</a></h6>
+                    <address class="text-5">Av. Parque Palomeras Bajas, 19B, posterior</address>
+                    <div class="tienda-social">
+                        <i class="fab fa-twitter-square"></i><i class="fab fa-facebook"></i><i class="fas fa-phone-square"></i>
+                    </div>
+                </div>
+                <div class="card ficha-tienda">
+                    <div class="card-picture">
+                        <picture class="img-3 d-none d-lg-flex">
+                            <img src="/img/cards-tiendas/2decologico.jpg" alt="" class="img-fluid">
+                        </picture>
+                    </div>
+                    <h6 class="heading heading-6"><a href="https://www.huertosostenible.com">Tiétar Huerto Sostenible</a></h6>
+                    <address class="text-5">C/ Golondrina, 41</address>
+                    <div class="tienda-social">
+                        <i class="fab fa-twitter-square"></i><i class="fab fa-facebook"></i><i class="fas fa-phone-square"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <h5 class="heading heading-5">Paracuellos del Jarama</h6>
+                <div class="card ficha-tienda">
+                    <div class="card-picture">
+                        <picture class="img-3 d-none d-lg-flex">
+                            <img src="/img/cards-tiendas/Divina-natura.jpeg" alt="" class="img-fluid">
+                        </picture>
+                    </div>
+                    <h6 class="heading heading-6"><a href="http://www.divinanatura.com">Divina Natura</a></h6>
+                    <address class="text-5">C/ Chorrillo Alta, 29</address>
+                    <div class="tienda-social">
+                            <i class="fab fa-twitter-square"></i><i class="fab fa-facebook"></i><i class="fas fa-phone-square"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <h5 class="heading heading-5">San Fernando de Henares</h6>
+                <div class="card ficha-tienda">
+                    <div class="card-picture">
+                        <picture class="img-3 d-none d-lg-flex">
+                            <img src="/img/cards-tiendas/Divina-natura.jpeg" alt="" class="img-fluid">
+                        </picture>
+                    </div>
+                    <h6 class="heading heading-6"><a href="http://ecotiendaalegre.blogspot.com">Ecotienda Alegre</a></h5>
+                    <address class="text-5">C/ De la huerta 3</address>
+                    <div class="tienda-social">
+                            <i class="fab fa-twitter-square"></i><i class="fab fa-facebook"></i><i class="fas fa-phone-square"></i>
+                    </div>
+            </div>
+            <div class="card-group">
+                <h5 class="heading heading-5">San Sebastián de los Reyes</h5>
+                <div class="card ficha-tienda">
+                    <div class="card-picture">
+                        <picture class="img-3 d-none d-lg-flex">
+                            <img src="/img/cards-tiendas/Bodevici.jpg" alt="" class="img-fluid">
+                        </picture>
+                    </div>
+                    <h6 class="heading heading-6"><a href="http://www.bodevici.es/inici/productos">Bodevici</a></h6>
+                    <address class="text-5">C/ Calle María Moliner, 10</address>
+                    <div class="tienda-social">
+                            <i class="fab fa-twitter-square"></i><i class="fab fa-facebook"></i><i class="fas fa-phone-square"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <h5 class="heading heading-5">Torrejón de Ardoz</h5>
+                <div class="card ficha-tienda">
+                    <div class="card-picture">
+                        <picture class="img-3 d-none d-lg-flex">
+                            <img src="/img/cards-tiendas/Bodevici.jpg" alt="" class="img-fluid">
+                        </picture>
+                    </div>
+                    <h6 class="heading heading-6"><a href="http://www.ecologicosdebuenasemilla.com">Ecológicos de Buena
+                            Semilla</a></h6>
+                    <address class="text-5">C/ Madrid, 11</address>
+                    <div class="tienda-social">
+                            <i class="fab fa-twitter-square"></i><i class="fab fa-facebook"></i><i class="fas fa-phone-square"></i>
+                    </div>
                 </div>
             </div>
         </section>
@@ -211,6 +502,43 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function (event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                    &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000, function () {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            };
+                        });
+                    }
+                }
+            });
+    </script>
 </body>
 
 </html>

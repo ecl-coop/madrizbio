@@ -1,7 +1,7 @@
 #oferta{
     @include section-default;
-    margin-top: 15rem;
-    scroll-margin-top: -15rem;
+    
+    //scroll-margin-top: -15rem;
     &::before{
         @include pseudo-absolute;
         background: url("/img/hoja-2_crop.png") no-repeat right;

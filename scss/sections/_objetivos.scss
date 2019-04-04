@@ -1,5 +1,6 @@
 #objetivos {
     @include section-default;
+    margin-bottom: 15rem;
         @include media(">=desktop"){
             justify-content: center;
             padding-left: 25%;

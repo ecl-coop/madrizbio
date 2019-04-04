@@ -1,3 +1,70 @@
-#directorio{
+#directorio {
     background-color: $rojo;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-column-gap: 1fr;
+    grid-row-gap: 40px;
+    grid-auto-flow: row dense;
+    align-items: start;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    padding: 2em 8vw;
+    color: $blanco;
+    margin-bottom: 15rem;
+
+    .card-group {
+        display: grid;
+        grid-template-columns: auto;
+        //grid-template-rows: min-content auto;
+    }
+
+    #madrid {
+        grid-column: 1/-1;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+        .heading {
+            grid-column: 1/-1;
+        }
+
+        //grid-row: 1;
+    }
+
+    .ficha-tienda {
+        padding: .8em 1em;
+        background-color: transparent;
+
+        i:not(:last-of-type) {
+            margin-right: .8em;
+        }
+    }
+
+    @include media(">=tablet") {
+        //grid-template-columns: repeat(3, minmax(33.33%, 300px));
+
+        #madrid {
+            //grid-template-columns: repeat(3, minmax(33.33%, 300px));
+        }
+    }
+
+    @include media(">=desktop") {
+        grid-template-columns: repeat(4, minmax(20%, 24%));
+        align-items: stretch;
+        //grid-template-rows: minmax(305px, 420px);
+        #madrid {
+            grid-template-columns: repeat(4, minmax(20%, 24%));
+            grid-row-gap: 1em;
+            justify-content: space-evenly;
+            align-content: space-evenly;
+        }
+        .ficha-tienda {
+            border: 2px solid $blanco;
+            box-shadow: 0 1em .75em rgba(0, 0, 0, .20);
+            border-radius: 1rem 1rem;
+        }
+        .card-group{
+            .heading-5{
+                padding-right: 0;
+            }
+        }
+    }
 }
