@@ -1,7 +1,7 @@
 #intro {
     @include section-default;
     justify-content: center;
-    
+
     &::after {
         @include pseudo-absolute;
         background: url("/img/hoja-1.png") no-repeat center;
@@ -43,10 +43,7 @@
             top: 0;
         }
         &::after{
-            background: url("/img/hoja-1_crop.png") no-repeat right;
-            top: 70%;
-            right: 0;
-            bottom: unset;
+            content: none;
         }
         .logo {
             grid-column: 1 / 3;

@@ -16,6 +16,7 @@
         "popper.js": "^1.14.7",
         "postcss-cli": "^6.1.2",
         "sass": "^1.17.3",
+        "waypoints": "^4.0.1",
         "wpcom": "^5.4.2"
     },
     "scripts": {
