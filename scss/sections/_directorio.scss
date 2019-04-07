@@ -32,7 +32,10 @@
     .ficha-tienda {
         padding: .8em 1em;
         background-color: transparent;
-
+        i{
+            color: inherit;
+            margin-top: 0;
+        }
         i:not(:last-of-type) {
             margin-right: .8em;
         }

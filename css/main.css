@@ -553,6 +553,9 @@ i {
   #directorio .ficha-tienda {
     padding: .8em 1em;
     background-color: transparent; }
+    #directorio .ficha-tienda i {
+      color: inherit;
+      margin-top: 0; }
     #directorio .ficha-tienda i:not(:last-of-type) {
       margin-right: .8em; }
   @media (min-width: 1024px) {
