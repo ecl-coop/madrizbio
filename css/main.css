@@ -331,7 +331,6 @@ body {
         padding: 1rem;
         align-self: end;
         position: relative;
-        min-height: 232px;
         align-items: center; }
         #intro .logo::before {
           content: "";
@@ -389,10 +388,13 @@ body {
   overflow: visible;
   scroll-snap-align: start;
   margin-bottom: 15rem; }
+  #objetivos .list-2 {
+    display: block; }
   #objetivos .list-2-item {
     background-color: var(--white); }
   @media (min-width: 1024px) {
     #objetivos {
+      min-height: auto;
       justify-content: center;
       padding-left: 25%;
       padding-right: 16%; }
@@ -406,10 +408,16 @@ body {
         background-position-y: bottom;
         bottom: -70vmin; }
       #objetivos .text {
+        margin-left: -25%;
         align-self: flex-start;
         margin-bottom: 4em; }
+      #objetivos .list-2 {
+        display: flex; }
       #objetivos .list-2-item {
         position: relative; }
+        #objetivos .list-2-item .img-2 {
+          margin-right: 1rem;
+          margin-bottom: 0; }
         #objetivos .list-2-item::after {
           content: "";
           position: absolute;
@@ -553,10 +561,16 @@ i {
   #directorio .ficha-tienda {
     padding: .8em 1em;
     background-color: transparent; }
-    #directorio .ficha-tienda i {
-      color: inherit;
-      margin-top: 0; }
-    #directorio .ficha-tienda i:not(:last-of-type) {
+    #directorio .ficha-tienda .tienda-social a i {
+      color: var(--white);
+      margin-top: 0;
+      transition: all 150ms ease-in; }
+      #directorio .ficha-tienda .tienda-social a i:hover {
+        transform: scale(1.175);
+        filter: drop-shadow(0px 0px 2px var(--brand-green)); }
+      #directorio .ficha-tienda .tienda-social a i:active {
+        color: var(--brand-green); }
+    #directorio .ficha-tienda .tienda-social a:not(:last-of-type) {
       margin-right: .8em; }
   @media (min-width: 1024px) {
     #directorio {

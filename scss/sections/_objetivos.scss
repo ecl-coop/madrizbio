@@ -1,10 +1,14 @@
 #objetivos {
     @include section-default;
     margin-bottom: 15rem;
+    .list-2{
+        display: block;
+    }
     .list-2-item{
         background-color: $blanco;
     }
         @include media(">=desktop"){
+            min-height: auto;
             &::after{
                 @include pseudo-absolute;
                     background: url("/img/hoja-1_crop.png") no-repeat right;
@@ -15,13 +19,19 @@
             padding-left: 25%;
             padding-right: 16%;
             .text{
-                //max-width: 80%;
+                margin-left: -25%;
                 align-self: flex-start;
                 margin-bottom: 4em;
             }
-
+            .list-2{
+                display: flex;
+            }
             .list-2-item{
                 position: relative;
+                .img-2{
+                    margin-right: 1rem;
+                    margin-bottom: 0;
+                }
                 &::after {
                     @include pseudo-absolute;
                     width: 100%;

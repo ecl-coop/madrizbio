@@ -52,7 +52,7 @@
             padding: 1rem;
             align-self: end;
             position: relative;
-            min-height: 232px;
+            //min-height: 232px;
             align-items: center;
             &::before{
                 @include pseudo-absolute;
