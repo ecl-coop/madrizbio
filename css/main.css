@@ -69,7 +69,7 @@ body {
     font-weight: 800;
     font-size: 1.25rem; }
   .heading-5 {
-    font-size: 5vmin;
+    font-size: 4vmin;
     font-weight: 100;
     padding-right: 1em;
     text-transform: capitalize;
@@ -84,7 +84,7 @@ body {
         color: var(--brand-green); }
   @media (min-width: 768px) {
     .heading-5 {
-      font-size: 5vmin; } }
+      font-size: 3vmin; } }
   @media (min-width: 1024px) {
     .heading-1 {
       font-size: 3.5rem; }
@@ -541,7 +541,7 @@ i {
   background-color: var(--brand-red);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-column-gap: 1fr;
+  grid-column-gap: 1vmin;
   grid-row-gap: 40px;
   grid-auto-flow: row dense;
   align-items: start;

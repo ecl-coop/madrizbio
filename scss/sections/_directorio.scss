@@ -2,7 +2,7 @@
     background-color: $rojo;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-column-gap: 1fr;
+    grid-column-gap: 1vmin;
     grid-row-gap: 40px;
     grid-auto-flow: row dense;
     align-items: start;
