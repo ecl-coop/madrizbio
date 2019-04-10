@@ -1,0 +1,319 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "accuracy": "street",
+        "dirección": "Calle Giralda, 28903 Getafe, Madrid, Spain",
+        "nombre": "Biolibere"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.713332,
+          40.318459
+        ],
+        "type": "Point"
+      },
+      "id": "address.1104875359"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "accuracy": "street",
+        "dirección": "Avenida Del Oeste 27, 28922 Alcorcón, Madrid, Spain",
+        "nombre": "Alma Ecológica"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.827664,
+          40.339927
+        ],
+        "type": "Point"
+      },
+      "id": "address.1313741414"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "accuracy": "point",
+        "dirección": "Cl Cgdor Jose De Pasamonte 14, 28030 Madrid, Madrid, Spain",
+        "nombre: "Detrás del árbol"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.647314,
+          40.410607
+        ],
+        "type": "Point"
+      },
+      "id": "address.1420519441"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "accuracy": "point",
+        "dirección": "Carrer Maria Moliner 10, 28702 San Sebastián de los Reyes, Madrid, Spain",
+        "nombre": "Bodevici"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.613672,
+          40.560467
+        ],
+        "type": "Point"
+      },
+      "id": "address.1563126969"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "dirección": "Cl Sierra Morena 31, 28031 Madrid, Madrid, Spain",
+        "nombre": "La Tienda de la Abuela"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.623718,
+          40.378081
+        ],
+        "type": "Point"
+      },
+      "id": "address.1638237641"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "accuracy": "point",
+        "dirección": "Carrer Madrid 11, 28850 Torrejón de Ardoz, Madrid, Spain",
+        "nombre": "Ecológicos de Buena Semilla"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.477019,
+          40.463225
+        ],
+        "type": "Point"
+      },
+      "id": "address.1884358084"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "accuracy": "point",
+        "dirección": "Cl Moratines 16, 28005 Madrid, Madrid, Spain",
+        "nombre": "Albahaca Ecotienda"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.70365,
+          40.403017
+        ],
+        "type": "Point"
+      },
+      "id": "address.1975548289"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "accuracy": "point",
+        "dirección": "Cl Narvaez 59, 28009 Madrid, Madrid, Spain",
+        "nombre": "El Mercado Bueno"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.675857,
+          40.417457
+        ],
+        "type": "Point"
+      },
+      "id": "address.306508971"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "accuracy": "interpolated",
+        "dirección": "Avenida Plaza De Toros 14, 28300 Aranjuez, Madrid, Spain",
+        "nombre": "Ecoalimentación Aranjuez"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.600176,
+          40.027994
+        ],
+        "type": "Point"
+      },
+      "id": "address.329923490"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "accuracy": "point",
+        "dirección": "Calle Chorrillo Alta 29, 28860 Paracuellos de Jarama, Madrid, Spain",
+        "nombre": "Divina Natura"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.532022,
+          40.505716
+        ],
+        "type": "Point"
+      },
+      "id": "address.484073236"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "accuracy": "street",
+        "dirección": "Cl Noviciado, 28015 Madrid, Madrid, Spain",
+        "nombre": "2decológico"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.708295,
+          40.425539
+        ],
+        "type": "Point"
+      },
+      "id": "address.516562337"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "accuracy": "street",
+        "dirección": "Calle Del Corregidor Alonso De Tobar, 28030 Madrid, Madrid, Spain",
+        "nombre": "Artesanos del Sabor"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.648487,
+          40.403579
+        ],
+        "type": "Point"
+      },
+      "id": "address.53991907"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "accuracy": "street",
+        "dirección": "Calle Lola Gaos, 28400 Collado Villalba, Madrid, Spain",
+        "nombre": "Tu Ecológica"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.994254,
+          40.646272
+        ],
+        "type": "Point"
+      },
+      "id": "address.705391917"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "accuracy": "street",
+        "dirección": "Calle De La Lechuga, 28012 Madrid, Madrid, Spain",
+        "nombre": "Ecotienda la Lechuga"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.7071,
+          40.414334
+        ],
+        "type": "Point"
+      },
+      "id": "address.778336380"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "accuracy": "point",
+        "dirección": "Av Parque Palomeras Bajas 19b, 28018 Madrid, Madrid, Spain",
+        "nombre": "Tomatomates"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.659914,
+          40.380304
+        ],
+        "type": "Point"
+      },
+      "id": "address.942776480"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "dirección": "28912, Leganés, Madrid, Spain",
+        "nombre": "Mercadito Natural Alegría de la Huerta"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.76,
+          40.33
+        ],
+        "type": "Point"
+      },
+      "id": "postcode.12468056929202040"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "dirección": "28830, San Fernando de Henares, Madrid, Spain",
+        "nombre": "Ecotienda Alegre"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.53,
+          40.43
+        ],
+        "type": "Point"
+      },
+      "id": "postcode.4879652051355500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "dirección": "28500, Arganda del Rey, Madrid, Spain",
+        "nombre": "Tu Rincón Ecológico"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.44,
+          40.3
+        ],
+        "type": "Point"
+      },
+      "id": "postcode.5650300843757690"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "dirección": "10319, Tiétar, Cáceres, Spain",
+        "nombre": "Huerto Sostenible"
+      },
+      "geometry": {
+        "coordinates": [
+          -5.48,
+          40.03
+        ],
+        "type": "Point"
+      },
+      "id": "postcode.5850845355969500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "dirección": "28045, Madrid, Madrid, Spain",
+        "nombre": "Es de Raíz"
+      },
+      "geometry": {
+        "coordinates": [
+          -3.7,
+          40.4
+        ],
+        "type": "Point"
+      },
+      "id": "postcode.7648566983113870"
+    }
+  ],
+  "type": "FeatureCollection"
+}
