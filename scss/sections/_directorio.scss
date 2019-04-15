@@ -21,12 +21,10 @@
     #madrid {
         grid-column: 1/-1;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-
+        grid-column-gap: 1vmin;
         .heading {
             grid-column: 1/-1;
         }
-
-        //grid-row: 1;
     }
 
     .ficha-tienda {
@@ -50,24 +48,14 @@
                 margin-right: .8em;
                 }
             }
-        }
-        
-        
-        
-    }
-
-    @include media(">=tablet") {
-        //grid-template-columns: repeat(3, minmax(33.33%, 300px));
-
-        #madrid {
-            //grid-template-columns: repeat(3, minmax(33.33%, 300px));
-        }
+        }  
     }
 
     @include media(">=desktop") {
         grid-template-columns: repeat(4, minmax(20%, 24%));
         align-items: stretch;
-        //grid-template-rows: minmax(305px, 420px);
+        padding-top: 4vmax;
+        padding-bottom: 8vmax;
         #madrid {
             grid-template-columns: repeat(4, minmax(20%, 24%));
             grid-row-gap: 1em;
@@ -78,11 +66,20 @@
             border: 2px solid $blanco;
             box-shadow: 0 1em .75em rgba(0, 0, 0, .20);
             border-radius: 1rem 1rem;
+            .img-fluid{
+                width: 100%;
+            }
         }
         .card-group{
             .heading-5{
                 padding-right: 0;
             }
+        }
+    }
+    @include media(">=uhd") {
+        grid-template-columns: repeat(5, minmax(16%, 20%));
+        #madrid{
+            grid-template-columns: repeat(5, minmax(16%, 20%));
         }
     }
 }

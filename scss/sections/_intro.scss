@@ -20,18 +20,21 @@
             font-family: $font-serif;
             font-size: .75rem;
             font-weight: 800;
-
+            transition: all 200ms ease-out;
             &:not(:last-of-type) {
                 margin-bottom: .75em;
             }
         }
     }
+    .down-button{
+        bottom: 10%;
+    }
 
     @include media(">=desktop") {
         display: grid;
         grid-template-columns: repeat(9, 11.111%);
-        grid-template-rows: min-content auto;
-        position: unset;
+        grid-template-rows: min-content min-content;
+        padding-top: 10vmin;
 
         &::before {
             @include pseudo-absolute;
@@ -39,7 +42,7 @@
             background-size: cover;
             filter: blur(5px);
             transform: scale(1.01);
-            left: 0;
+            left: -10vw;
             top: 0;
         }
         &::after{
@@ -70,6 +73,10 @@
             .btn{
                 font-size: 1rem;
                 border-color: $blanco;
+                &:hover{
+                    color: $rojo;
+                    border-color: $rojo;
+                }
                 &:not(:last-of-type) {
                     margin-bottom: 2em;
                 }
@@ -97,6 +104,19 @@
         .text-1, .text-2 {
             background-color: transparent;
             color: $blanco;
+        }
+    }
+    @include media(">=hd") {
+        .logo {
+            min-height: 232px;
+        }
+    }
+    @include media(">=uhd"){
+        &::before {
+            left: -11.5vw;
+           }
+        .text-container{
+            grid-column: 4 / -2;
         }
     }
 }

@@ -21,7 +21,7 @@
     },
     "scripts": {
         "start": "npm-run-all --parallel browser-sync build-sass watch-sass",
-        "browser-sync": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' -w --directory --port 7777 --browser \"C:\\Program Files\\Firefox Developer Edition\\firefox.exe\"",
+        "browser-sync": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' -w --directory --port 7777 --browser \"C:\\Users\\pc\\AppData\\Local\\Firefox Nightly\\firefox.exe\"",
         "build-sass": "node-sass scss/main.scss css/main.css",
         "watch-sass": "node-sass -w scss/main.scss css/main.css"
     },

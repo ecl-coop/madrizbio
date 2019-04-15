@@ -36,6 +36,7 @@
                 <button type="button" class="btn btn-light" onclick="window.location.href='#mapa-tiendas';">ubícanos</button>
                 <button type="button" class="btn btn-light" onclick="window.location.href='#contacto';">contáctanos</button>
             </side>
+            <a class="down-button" href="#objetivos"><i class="fas fa-chevron-down"></i></a>
         </section>
         <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
             <a class="navbar-brand" href="#">
@@ -93,6 +94,7 @@
                     <p class="list-2-text">Generamos sinergias en beneficio de toda la red, respetando la identidad de cada tienda.</p>
                 </dt>
             </dl>
+            <a class="down-button" href="#oferta"><i class="fas fa-chevron-down"></i></a>
         </section>
         <section class="row" id="oferta">
             <h1 class="heading heading-1">Nuestras tiendas<span class="heading-2"> te ofrecen<span></h1>
@@ -124,9 +126,10 @@
                     localidades de la Comunidad de Madrid.</p>
                 </dt>
             </dl>
+            <a class="down-button" href="#mapa-tiendas"><i class="fas fa-chevron-down"></i></a>
         </section>
         <header class="heading-mapa heading heading-3">encuentra tu tienda MadrizBio más cercana
-            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-map-marked-alt"></i>
         </header>
         <section class="row" id="mapa-tiendas">
             <div id="map"></div>
@@ -475,41 +478,41 @@
             </dl>
         </section>
         <section class="row" id="contacto">
-            <form name="submit-to-google-sheet" class="row">
+            <form name="submit-to-google-sheet" class="row" id="contact-form">
                 <header class="form-header">
                     <h3 class="heading heading-3">contáctanos</h3>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="seleccion" id="check-consulta" value="seleccion-contacto">
+                        <input name="interes" value="consulta general" type="radio" class="custom-control-input" id="check-consulta">
                         <label class="custom-control-label" for="check-consulta">tengo una consulta general</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="seleccion" id="check-asociar" value="seleccion-contacto">
+                        <input name="interes" value="quiero asociar" type="radio" class="custom-control-input" id="check-asociar">
                         <label class="custom-control-label" for="check-asociar">quiero asociar mi tienda</label>
                     </div>
                 </header>
                 <div class="form-group">
                     <label for="nombre">Nombre:</label>
-                    <input name="nombre" type="text" class="form-control rounded-pill" placeholder="nombre" id="nombre">
+                    <input name="nombre" type="text" class="form-control rounded-pill" placeholder="nombre" id="nombre" required="required">
                 </div>
                 <div class="form-group">
                     <label for="email">Correo electrónico:</label>
-                    <input name="email" type="email" class="form-control rounded-pill" placeholder="nombre@ejemplo.com" id="email">
+                    <input name="email" type="email" class="form-control rounded-pill" placeholder="nombre@ejemplo.com" id="email" required="required">
                 </div>
                 <div class="form-group">
                     <label for="telefono">Teléfono:</label>
-                    <input name="tel" type="tel" class="form-control rounded-pill" placeholder="teléfono" id="telefono">
+                    <input name="tel" type="tel" class="form-control rounded-pill" placeholder="teléfono" id="telefono" required="required">
                 </div>
                 <div class="form-group">
                     <label for="mensaje">Mensaje:</label>
-                    <textarea name="msj" class="form-control rounded" rows="6" placeholder="su mensaje por favor" id="mensaje"></textarea>
+                    <textarea name="msj" class="form-control rounded" rows="6" placeholder="su mensaje por favor" id="mensaje" required="required"></textarea>
                 </div>
-                <input type="submit" class="btn btn-danger" value="enviar"></button>
+                <input type="submit" class="btn btn-danger" value="enviar" onClick="clearform();"></button>
             </form>    
             <footer class="row">
                 <div class="logo">
-                    <img class="img-fluid" src="/img/madbi_logo.svg" alt="MadrizBio Logo">
+                    <a href="#intro"><img class="img-fluid" src="/img/madbi_logo.svg" alt="MadrizBio Logo"></a> 
                 </div>
-                <small>Dirección o algo</small>
+                <small class="text-5"><a href="mailto:madrizbio@madrizbio.es">madrizbio@madrizbio.es</a></small>
             </footer>
         </section>
     </div>
@@ -517,16 +520,18 @@
     <script type="text/javascript">
         const scriptURL ='https://script.google.com/macros/s/AKfycbw5ISfT72ahi3yE6E7mmf5oXqTArXtiOw4q7OEBvmWncyHyxpOa/exec'
         const form = document.forms['submit-to-google-sheet']
-
+        
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, {
                     method: 'POST',
                     body: new FormData(form)
                 })
-                .then(response => console.log('Success!', response))
-                .catch(error => console.error('Error!', error.message))
+                .then(response => alert("Gracias por contactarnos.", response))
+                .then($("#contact-form")[0].reset())
+                .catch(error => alert("Hubo un error. Por favor intente nuavemante", error.message))
         });
+        
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

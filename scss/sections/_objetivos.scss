@@ -8,7 +8,7 @@
         background-color: $blanco;
     }
         @include media(">=desktop"){
-            min-height: auto;
+
             &::after{
                 @include pseudo-absolute;
                     background: url("/img/hoja-1_crop.png") no-repeat right;

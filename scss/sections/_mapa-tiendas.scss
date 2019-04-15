@@ -5,8 +5,11 @@
     height: 50vmax;
     position: relative;
     @include media(">=desktop") {
-            height: 20vmax;
+            height: 30vmax;
         }
+    @include media(">=hd") {
+        height: 45vmin;
+    }
 }
 #map {
     position: absolute;
@@ -17,13 +20,16 @@
 .heading-mapa {
     @include flex-column;
     justify-content: center;
-    height: 12.5rem;
+    min-height: 12.5rem;
     margin-top: 10rem;
     text-transform: none;
     line-height: 1.1;
     color: $blanco;
     position: relative;
     background-color: $negro;
+    width: 100vw;
+    left: -15px;
+    padding: 1rem 3rem;
     .heading-3{
         font-size: 6vmin;
     }

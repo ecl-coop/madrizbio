@@ -50,10 +50,11 @@
         width: 100%;
         align-items: center;
         justify-content: flex-end;
-        height: 550px;
-        padding-bottom: 3rem;
+        min-height: 550px;
+        padding-bottom: 7vmax;
         position: relative;
         margin-top: -260px;
+        flex: 1 0 auto;
         &::before{
             @include pseudo-absolute;
             height: 100%;
@@ -63,6 +64,17 @@
         .logo{
             padding-bottom: .5rem;
             width: 10rem;
+        }
+        .text-5{
+            margin-top: 1em;
+        }
+        .text-5 a{
+            color: $blanco;
+        }
+    }
+    @include media(">=desktop"){
+        footer.row{
+            padding-bottom: 5vmax;
         }
     }
 }
