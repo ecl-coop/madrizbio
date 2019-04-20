@@ -29,13 +29,36 @@
     .down-button{
         bottom: 10%;
     }
+    @include media(">=phone","<=desktop","landscape"){
+        width: 90vw;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 2vmax;
+        margin-bottom: 10vmax;
+        .logo{
+            padding-bottom: 1.5rem;
+            align-self: end;
+        }
+        &::after {
+            top: 0;
+            bottom: 0;
+            background-position: left;
+        }
+        .text-container{
+            grid-column: 2;
+            grid-row: 1/3;
+        }
+        .botones{
+            align-self: start;
+        }
+    }
 
     @include media(">=desktop") {
         display: grid;
         grid-template-columns: repeat(9, 11.111%);
         grid-template-rows: min-content min-content;
         padding-top: 10vmin;
-
+        
         &::before {
             @include pseudo-absolute;
             background: url("/img/desktop-cover_2.png") no-repeat center;
@@ -104,6 +127,10 @@
         .text-1, .text-2 {
             background-color: transparent;
             color: $blanco;
+        }
+        .down-button{
+            height: auto;
+            bottom: 5vmin;
         }
     }
     @include media(">=hd") {

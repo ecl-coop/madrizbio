@@ -17,7 +17,9 @@
         color: $verde;
         margin-bottom: 1em;
     }
-
+    .heading-4{
+        color: $rojo;
+    }
     @include media(">=desktop") {
         .heading {
             align-self: flex-start;

@@ -12,6 +12,8 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,400,700|Roboto+Slab:100,400,700" rel="stylesheet">
     <script type="text/javascript" src="/js/smoothscroll.js" async></script>
+    <script src="/js/intersection-observer.js"></script>
+    <script src="/js/lazyload.js"></script>
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
     <meta property="og:site_name" content="MadrizBio">
@@ -36,12 +38,12 @@
                 <button type="button" class="btn btn-light" onclick="window.location.href='#mapa-tiendas';">ubícanos</button>
                 <button type="button" class="btn btn-light" onclick="window.location.href='#contacto';">contáctanos</button>
             </side>
-            <a class="down-button" href="#objetivos"><i class="fas fa-chevron-down"></i></a>
+            <a class="down-button d-none d-md-block" href="#objetivos"><i class="fas fa-chevron-down"></i></a>
         </section>
         <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
             <a class="navbar-brand" href="#">
                 <img src="/img/logo_min.svg" width="64" height="64" class="img-fluid" alt="">
-                MB
+                Madriz<strong>Bio</strong>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,30 +102,29 @@
             <h1 class="heading heading-1">Nuestras tiendas<span class="heading-2"> te ofrecen<span></h1>
             <dl class="row list-1">
                 <dt class="list-1-item">
-                    <img src="/img/oferta_responsabilidad.jpg" alt="imagen-responsabilidad" class="img-1">
+                    <img  src="/img/img-placeholder.png" data-src="/img/oferta_responsabilidad.jpg" data-srcset="/img/oferta_responsabilidad.jpg 1x" alt="imagen-responsabilidad" class="img-1 lazy">
                     <h4 class="heading-4">Responsabilidad</h4 class="heading-4">
-                    <p class="text text-3">Ofrecemos productos ecológicos, productos de Madrid o su entorno, y productos de comercio justo. Todo ello para
+                    <p class="text text-3">Ofrecemos productos <strong>ecológicos</strong> , productos <strong>de Madrid</strong> o su entorno, y productos de <strong>comercio justo</strong>. Todo ello para
                     facilitar un consumo sostenible y saludable para las personas y el medio ambiente.</p>
                     <a href="">ver marcas</a>
                 </dt>
                 <dt class="list-1-item">
-                    <img src="/img/oferta_calidad.jpg" alt="imagen-calidad" class="img-1">
+                    <img src="/img/img-placeholder.png" data-src="/img/oferta_calidad.jpg" data-srcset="/img/oferta_calidad.jpg 1x"  alt="imagen-calidad" class="img-1 lazy">
                     <h4 class="heading-4">Calidad y precios</h4 class="heading-4">
-                    <p class="text text-3">Contamos con productos ecológicos, exclusivos y de proximidad y realizamos compras colectivas para ofrecerte mejores
-                        precios.</p>
+                    <p class="text text-3">Unimos nuestra fuerza compradora para <strong>mejorar precios</strong>, facilitar la logística y el transporte y <strong>disponer de productos y servicios exclusivos</strong>.</p>
                     <a href="">ver precios</a>
                 </dt>
                 <dt class="list-1-item">
-                    <img src="/img/oferta_variedad.jpg" alt="imagen-variedad" class="img-1">
+                    <img src="/img/img-placeholder.png" data-src="/img/oferta_variedad.jpg" data-srcset="/img/oferta_variedad.jpg 1x" alt="imagen-variedad" class="img-1 lazy">
                     <h4 class="heading-4">Comodidad</h4 class="heading-4">
-                    <p class="text text-3">Variedad de surtido para que puedas hacer tus compras en el mismo establecimiento. </p>
+                    <p class="text text-3">Contamos con <strong>variedad de surtido</strong> para que puedas hacer todas tus compras en el mismo establecimiento. </p>
                     <a href="">ver categorias</a>
                 </dt>
                 <dt class="list-1-item">
-                    <img src="/img/oferta_cercania.jpg" alt="imagen-comodidad" class="img-1">
+                    <img src="/img/img-placeholder.png" data-src="/img/oferta_cercania.jpg" data-srcset="/img/oferta_cercania.jpg 1x" alt="imagen-comodidad" class="img-1 lazy">
                     <h4 class="heading-4">Cercanía y proximidad</h4 class="heading-4">
-                    <p class="text text-3">Gracias una red en pleno crecimiento con 9 tiendas en Madrid centro y otras 11 distribuidas en diferentes
-                    localidades de la Comunidad de Madrid.</p>
+                    <p class="text text-3">Gracias una red en pleno crecimiento con <strong>9 tiendas en Madrid centro</strong> y otras <strong>11 distribuidas en diferentes
+                    localidades</strong> de la Comunidad de Madrid.</p>
                 </dt>
             </dl>
             <a class="down-button" href="#mapa-tiendas"><i class="fas fa-chevron-down"></i></a>
@@ -140,10 +141,10 @@
                 <div class="card ficha-tienda">
                     <div class="card-picture">
                         <picture class="img-3">
-                            <img src="/img/cards-tiendas/alma-ecologica-en-alcorcon.jpg" alt="" class="img-fluid">
+                            <img src="/img/img-placeholder.png" data-src="/img/cards-tiendas/alma-ecologica-en-alcorcon.jpg" data-srcset="/img/cards-tiendas/alma-ecologica-en-alcorcon.jpg 1x" alt="tienda alma ecológica" class="img-fluid lazy">
                         </picture>
                     </div>
-                    <h6 class="heading heading-6"><a href="#">Alma Ecológica</a></h5>
+                    <h6 class="heading heading-6"><a href="https://www.facebook.com/tiendaalmaecologica">Alma Ecológica</a></h5>
                     <address class="text-5">Av. del Oeste, 27. 28922</address>
                     <div class="tienda-social">
                         <a href="https://www.facebook.com/tiendaalmaecologica"><i class="fab fa-facebook"></i></a> 
@@ -155,7 +156,7 @@
                 <div class="card ficha-tienda">
                     <div class="card-picture">
                         <picture class="img-3">
-                            <img src="/img/cards-tiendas/ecoalimentacion.jpg" alt="tienda ecoalimentación" class="img-fluid">
+                            <img src="/img/img-placeholder.png" data-src="/img/cards-tiendas/ecoalimentacion.jpg" data-srcset="/img/cards-tiendas/ecoalimentacion.jpg 1x" alt="tienda ecoalimentación" class="img-fluid lazy">
                         </picture>
                     </div>
                     <h6 class="heading heading-6"><a href="#">Ecoalimentación Aranjuez</a></h5>
@@ -171,7 +172,7 @@
                 <div class="card ficha-tienda">
                     <div class="card-picture">
                         <picture class="img-3">
-                            <img src="/img/cards-tiendas/tu-rincon-ecologico.jpeg" alt="" class="img-fluid">
+                            <img src="/img/img-placeholder.png" data-src="/img/cards-tiendas/tu-rincon-ecologico.jpeg" data-srcset="/img/cards-tiendas/tu-rincon-ecologico.jpeg 1x" alt="" class="img-fluid lazy">
                         </picture>
                     </div>
                     <h6 class="heading heading-6"><a href="https://turinconecologico.com">Tu Rincón Ecológico</a></h6>
@@ -188,7 +189,7 @@
                 <div class="card ficha-tienda">
                     <div class="card-picture">
                         <picture class="img-3">
-                            <img src="/img/cards-tiendas/tuecologica.jpg" alt="tienda-tu ecologica" class="img-fluid">
+                            <img src="/img/img-placeholder.png" data-src="/img/cards-tiendas/tuecologica.jpg" data-srcset="/img/cards-tiendas/tuecologica.jpg 1x" alt="tienda-tu ecologica" class="img-fluid lazy">
                         </picture>
                     </div>
                     <h6 class="heading heading-6"><a
@@ -207,7 +208,7 @@
                 <div class="card ficha-tienda">
                     <div class="card-picture">
                         <picture class="img-3">
-                            <img src="/img/cards-tiendas/lalechuga.jpg" alt="" class="img-fluid">
+                            <img src="/img/img-placeholder.png" data-src="/img/cards-tiendas/lalechuga.jpg" data-srcset="/img/cards-tiendas/lalechuga.jpg 1x" alt="Ecotienda la Lechuga" class="img-fluid lazy">
                         </picture>
                     </div>
                     <h6 class="heading heading-6"><a href="http://lalechuga.es">Ecotienda la Lechuga</a></h6>
@@ -224,7 +225,7 @@
                 <div class="card ficha-tienda">
                     <div class="card-picture">
                         <picture class="img-3">
-                            <img src="/img/cards-tiendas/biolibere.jpg" alt="tienda Biolibere" class="img-fluid">
+                            <img src="/img/img-placeholder.png" data-src="/img/cards-tiendas/biolibere.jpg" data-srcset="/img/cards-tiendas/biolibere.jpg 1x" alt="tienda Biolibere" class="img-fluid lazy">
                         </picture>
                     </div>
                     <h6 class="heading heading-6"><a href="http://biolibere.es">Biolibere</a></h6>
@@ -241,7 +242,7 @@
                 <div class="card ficha-tienda">
                     <div class="card-picture">
                         <picture class="img-3">
-                            <img src="/img/cards-tiendas/alegriadelahuerta.jpg" alt="tienda Alegría de la Huerta" class="img-fluid">
+                            <img src="/img/img-placeholder.png" data-src="/img/cards-tiendas/alegriadelahuerta.jpg" data-srcset="/img/cards-tiendas/alegriadelahuerta.jpg 1x" alt="tienda Alegría de la Huerta" class="img-fluid lazy">
                         </picture>
                     </div>
                     <h6 class="heading heading-6"><a href="https://mercaditoalegriadelahuerta.com">Mercadito Natural Alegría de
@@ -260,7 +261,7 @@
                 <div class="card ficha-tienda">
                     <div class="card-picture">
                         <picture class="img-3">
-                            <img src="/img/cards-tiendas/2decologico.jpg" alt="" class="img-fluid">
+                            <img src="/img/img-placeholder.png" data-src="/img/cards-tiendas/2decologico.jpg" data-srcset="/img/cards-tiendas/2decologico.jpg 1x" alt="2decológico" class="img-fluid lazy">
                         </picture>
                     </div>
                     <h6 class="heading heading-6"><a href="http://2decologico.org">2decológico</a></h6>
@@ -275,7 +276,7 @@
                 <div class="card ficha-tienda">
                     <div class="card-picture">
                         <picture class="img-3">
-                            <img src="/img/cards-tiendas/albahacaecotienda.jpg" alt="Albahaca Ecotienda" class="img-fluid">
+                            <img src="/img/img-placeholder.png" data-src="/img/cards-tiendas/albahacaecotienda.jpg" data-srcset="/img/cards-tiendas/albahacaecotienda.jpg 1x" alt="Albahaca Ecotienda" class="img-fluid lazy">
                         </picture>
                     </div>
                     <h6 class="heading heading-6"><a href="http://www.albahacaecotienda.com">Albahaca Ecotienda</a></h6>
@@ -289,7 +290,7 @@
                 <div class="card ficha-tienda">
                     <div class="card-picture">
                         <picture class="img-3">
-                            <img src="/img/cards-tiendas/artesanosdelsabor.png" alt="Artesanos del Sabobr" class="img-fluid">
+                            <img src="/img/img-placeholder.png" data-src="/img/cards-tiendas/artesanosdelsabor.png" data-srcset="/img/cards-tiendas/artesanosdelsabor.png 1x" alt="Artesanos del Sabobr" class="img-fluid lazy">
                         </picture>
                     </div>
                     <h6 class="heading heading-6"><a href="http://www.artesanosdelsabor.es">Artesanos del Sabor</a></h6>
@@ -302,7 +303,7 @@
                 <div class="card ficha-tienda">
                     <div class="card-picture">
                         <picture class="img-3">
-                            <img src="/img/cards-tiendas/detrasdelarbol.jpg" alt="tienda Detrás del Árbol" class="img-fluid">
+                            <img src="/img/img-placeholder.png" data-src="/img/cards-tiendas/detrasdelarbol.jpg" data-srcset="/img/cards-tiendas/detrasdelarbol.jpg 1x" alt="tienda Detrás del Árbol" class="img-fluid lazy">
                         </picture>
                     </div>
                     <h6 class="heading heading-6"><a href="https://www.detrasdelarbol.org">Detrás del árbol</a></h6>
@@ -315,7 +316,7 @@
                 <div class="card ficha-tienda">
                     <div class="card-picture">
                         <picture class="img-3">
-                            <img src="/img/cards-tiendas/elmercadobueno.png" alt="El mercado bueno" class="img-fluid">
+                            <img src="/img/img-placeholder.png" data-src="/img/cards-tiendas/elmercadobueno.png" data-srcset="/img/cards-tiendas/elmercadobueno.png 1x" alt="El mercado bueno" class="img-fluid lazy">
                         </picture>
                     </div>
                     <h6 class="heading heading-6"><a href="#">El Mercado Bueno</a></h6>
@@ -328,7 +329,7 @@
                 <div class="card ficha-tienda">
                     <div class="card-picture">
                         <picture class="img-3">
-                            <img src="/img/cards-tiendas/esderaiz.jpg" alt="tienda Es de Raiz" class="img-fluid">
+                            <img src="/img/img-placeholder.png" data-src="/img/cards-tiendas/esderaiz.jpg" data-srcset="/img/cards-tiendas/esderaiz.jpg 1x" alt="tienda Es de Raiz" class="img-fluid lazy">
                         </picture>
                     </div>
                     <h6 class="heading heading-6"><a href="https://esderaiz.com">Es de Raíz</a></h6>
@@ -343,7 +344,7 @@
                 <div class="card ficha-tienda">
                     <div class="card-picture">
                         <picture class="img-3">
-                            <img src="/img/cards-tiendas/la-tienda-de-la-abuela.jpg" alt="" class="img-fluid">
+                            <img src="/img/img-placeholder.png" data-src="/img/cards-tiendas/la-tienda-de-la-abuela.jpg" data-srcset="/img/cards-tiendas/la-tienda-de-la-abuela.jpg 1x" alt="" class="img-fluid lazy">
                         </picture>
                     </div>
                     <h6 class="heading heading-6"><a href="https://www.latiendadelaabuela.com">La Tienda de la Abuela</a></h6>
@@ -357,7 +358,7 @@
                 <div class="card ficha-tienda">
                     <div class="card-picture">
                         <picture class="img-3">
-                            <img src="/img/cards-tiendas/tomatomates.jpg" alt="tienda Tomatomates" class="img-fluid">
+                            <img src="/img/img-placeholder.png" data-src="/img/cards-tiendas/tomatomates.jpg" data-srcset="/img/cards-tiendas/tomatomates.jpg 1x" alt="tienda Tomatomates" class="img-fluid lazy">
                         </picture>
                     </div>
                     <h6 class="heading heading-6"><a href="http://www.tomatomates.es">Tomatomates</a></h6>
@@ -373,7 +374,7 @@
                 <div class="card ficha-tienda">
                     <div class="card-picture">
                         <picture class="img-3">
-                            <img src="/img/cards-tiendas/huertosostenible.jpg" alt="" class="img-fluid">
+                            <img src="/img/img-placeholder.png" data-src="/img/cards-tiendas/huertosostenible.jpg" data-srcset="/img/cards-tiendas/huertosostenible.jpg 1x" alt="" class="img-fluid lazy">
                         </picture>
                     </div>
                     <h6 class="heading heading-6"><a href="https://www.huertosostenible.com">Huerto Sostenible</a></h6>
@@ -390,7 +391,7 @@
                 <div class="card ficha-tienda">
                     <div class="card-picture">
                         <picture class="img-3">
-                            <img src="/img/cards-tiendas/Divina-natura.jpg" alt="foto Divina Natura" class="img-fluid">
+                            <img src="/img/img-placeholder.png" data-src="/img/cards-tiendas/Divina-natura.jpg" data-srcset="/img/cards-tiendas/Divina-natura.jpg 1x" alt="foto Divina Natura" class="img-fluid lazy">
                         </picture>
                     </div>
                     <h6 class="heading heading-6"><a href="http://www.divinanatura.com">Divina Natura</a></h6>
@@ -407,7 +408,7 @@
                 <div class="card ficha-tienda">
                     <div class="card-picture">
                         <picture class="img-3">
-                            <img src="/img/cards-tiendas/ecotienda-alegre.jpg" alt="" class="img-fluid">
+                            <img src="/img/img-placeholder.png" data-src="/img/cards-tiendas/ecotienda-alegre.jpg" data-srcset="/img/cards-tiendas/ecotienda-alegre.jpg 1x" alt="" class="img-fluid lazy">
                         </picture>
                     </div>
                     <h6 class="heading heading-6"><a href="http://ecotiendaalegre.blogspot.com">Ecotienda Alegre</a></h5>
@@ -424,7 +425,7 @@
                 <div class="card ficha-tienda">
                     <div class="card-picture">
                         <picture class="img-3">
-                            <img src="/img/cards-tiendas/Bodevici.jpg" alt="" class="img-fluid">
+                            <img src="/img/img-placeholder.png" data-src="/img/cards-tiendas/Bodevici.jpg" data-srcset="/img/cards-tiendas/Bodevici.jpg 1x" alt="" class="img-fluid lazy">
                         </picture>
                     </div>
                     <h6 class="heading heading-6"><a href="http://www.bodevici.es/inici/productos">Bodevici</a></h6>
@@ -440,7 +441,7 @@
                 <div class="card ficha-tienda">
                     <div class="card-picture">
                         <picture class="img-3">
-                            <img src="/img/cards-tiendas/ecologicosbuenasemilla.png" alt="" class="img-fluid">
+                            <img src="/img/img-placeholder.png" data-src="/img/cards-tiendas/ecologicosbuenasemilla.png" data-srcset="/img/cards-tiendas/ecologicosbuenasemilla.png 1x" alt="" class="img-fluid lazy">
                         </picture>
                     </div>
                     <h6 class="heading heading-6"><a href="http://www.ecologicosdebuenasemilla.com">Ecológicos de Buena
@@ -460,22 +461,23 @@
                 trabajamos:</p>
             <dl class="row list-1">
                 <dt class="list-1-item">
-                    <img src="/img/valores_equidad.jpg" alt="imagen-equidad" class="img-1">
+                    <img src="/img/img-placeholder.png" data-src="/img/valores_equidad.jpg" data-srcset="/img/valores_equidad.jpg 1x" alt="imagen-equidad" class="img-1 lazy">
                     <h4 class="heading-4">Equidad</h4 class="heading-4">
                     <p class="text text-3">Fomentamos relaciones justas y duraderas con nuestros proveedores.</p>
                 </dt>
                 <dt class="list-1-item">
-                    <img src="/img/valores_sinergia.jpg" alt="imagen-sinergia" class="img-1">
+                    <img src="/img/img-placeholder.png" data-src="/img/valores_sinergia.jpg" data-srcset="/img/valores_sinergia.jpg 1x" alt="imagen-sinergia" class="img-1 lazy">
                     <h4 class="heading-4">Sinergia y Eficacia</h4 class="heading-4">
                     <p class="text text-3">Hacemos pedidos conjuntos para reducir costes y ofrecer productos de calidad a precios más ajustados.</p>
                 </dt>
                 <dt class="list-1-item">
-                    <img src="/img/valores_colaboracion.jpg" alt="imagen-colaboracion" class="img-1">
+                    <img src="/img/img-placeholder.png" data-src="/img/valores_colaboracion.jpg" data-srcset="/img/valores_colaboracion.jpg 1x" alt="imagen-colaboracion" class="img-1 lazy">
                     <h4 class="heading-4">Colaboración</h4 class="heading-4">
                     <p class="text text-3">Compartimos productores, servicios de gestión e imagen de marca común para mejorar la eficiencia de nuestros
                     negocios.</p>
                 </dt>
             </dl>
+            <p class="text text-2">Contacta con nosotros para más información.<br> Te atenderemos lo antes posible.</p>
         </section>
         <section class="row" id="contacto">
             <form name="submit-to-google-sheet" class="row" id="contact-form">
@@ -559,7 +561,7 @@
                     "type": "Feature",
                     "properties": {
                     "accuracy": "street",
-                    "dirección": "Calle Giralda, 28903 Getafe, Madrid, Spain",
+                    "dirección": "Calle Giralda, 28903 Getafe, Madrid.",
                     "nombre": "Biolibere"
                     },
                     "geometry": {
@@ -575,7 +577,7 @@
                     "type": "Feature",
                     "properties": {
                     "accuracy": "street",
-                    "dirección": "Avenida Del Oeste 27, 28922 Alcorcón, Madrid, Spain",
+                    "dirección": "Avenida Del Oeste 27, 28922 Alcorcón, Madrid.",
                     "nombre": "Alma Ecológica"
                     },
                     "geometry": {
@@ -591,7 +593,7 @@
                     "type": "Feature",
                     "properties": {
                     "accuracy": "point",
-                    "dirección": "Cl Cgdor Jose De Pasamonte 14, 28030 Madrid, Madrid, Spain",
+                    "dirección": "Cl Cgdor Jose De Pasamonte 14, 28030 Madrid, Madrid.",
                     "nombre": "Detrás del árbol"
                     },
                     "geometry": {
@@ -607,7 +609,7 @@
                     "type": "Feature",
                     "properties": {
                     "accuracy": "point",
-                    "dirección": "Carrer Maria Moliner 10, 28702 San Sebastián de los Reyes, Madrid, Spain",
+                    "dirección": "Carrer Maria Moliner 10, 28702 San Sebastián de los Reyes, Madrid.",
                     "nombre": "Bodevici"
                     },
                     "geometry": {
@@ -622,7 +624,7 @@
                 {
                     "type": "Feature",
                     "properties": {
-                    "dirección": "Cl Sierra Morena 31, 28031 Madrid, Madrid, Spain",
+                    "dirección": "Cl Sierra Morena 31, 28031 Madrid, Madrid.",
                     "nombre": "La Tienda de la Abuela"
                     },
                     "geometry": {
@@ -638,7 +640,7 @@
                     "type": "Feature",
                     "properties": {
                     "accuracy": "point",
-                    "dirección": "Carrer Madrid 11, 28850 Torrejón de Ardoz, Madrid, Spain",
+                    "dirección": "Carrer Madrid 11, 28850 Torrejón de Ardoz, Madrid.",
                     "nombre": "Ecológicos de Buena Semilla"
                     },
                     "geometry": {
@@ -654,7 +656,7 @@
                     "type": "Feature",
                     "properties": {
                     "accuracy": "point",
-                    "dirección": "Cl Moratines 16, 28005 Madrid, Madrid, Spain",
+                    "dirección": "Cl Moratines 16, 28005 Madrid, Madrid.",
                     "nombre": "Albahaca Ecotienda"
                     },
                     "geometry": {
@@ -670,7 +672,7 @@
                     "type": "Feature",
                     "properties": {
                     "accuracy": "point",
-                    "dirección": "Cl Narvaez 59, 28009 Madrid, Madrid, Spain",
+                    "dirección": "Cl Narvaez 59, 28009 Madrid, Madrid.",
                     "nombre": "El Mercado Bueno"
                     },
                     "geometry": {
@@ -686,7 +688,7 @@
                     "type": "Feature",
                     "properties": {
                     "accuracy": "interpolated",
-                    "dirección": "Avenida Plaza De Toros 14, 28300 Aranjuez, Madrid, Spain",
+                    "dirección": "Avenida Plaza De Toros 14, 28300 Aranjuez, Madrid.",
                     "nombre": "Ecoalimentación Aranjuez"
                     },
                     "geometry": {
@@ -702,7 +704,7 @@
                     "type": "Feature",
                     "properties": {
                     "accuracy": "point",
-                    "dirección": "Calle Chorrillo Alta 29, 28860 Paracuellos de Jarama, Madrid, Spain",
+                    "dirección": "Calle Chorrillo Alta 29, 28860 Paracuellos de Jarama, Madrid.",
                     "nombre": "Divina Natura"
                     },
                     "geometry": {
@@ -718,7 +720,7 @@
                     "type": "Feature",
                     "properties": {
                     "accuracy": "street",
-                    "dirección": "Cl Noviciado, 28015 Madrid, Madrid, Spain",
+                    "dirección": "Cl Noviciado, 28015 Madrid, Madrid.",
                     "nombre": "2decológico"
                     },
                     "geometry": {
@@ -734,7 +736,7 @@
                     "type": "Feature",
                     "properties": {
                     "accuracy": "street",
-                    "dirección": "Calle Del Corregidor Alonso De Tobar, 28030 Madrid, Madrid, Spain",
+                    "dirección": "Calle Del Corregidor Alonso De Tobar, 28030 Madrid, Madrid.",
                     "nombre": "Artesanos del Sabor"
                     },
                     "geometry": {
@@ -750,7 +752,7 @@
                     "type": "Feature",
                     "properties": {
                     "accuracy": "street",
-                    "dirección": "Calle Lola Gaos, 28400 Collado Villalba, Madrid, Spain",
+                    "dirección": "Calle Lola Gaos, 28400 Collado Villalba, Madrid.",
                     "nombre": "Tu Ecológica"
                     },
                     "geometry": {
@@ -766,7 +768,7 @@
                     "type": "Feature",
                     "properties": {
                     "accuracy": "street",
-                    "dirección": "Calle De La Lechuga, 28012 Madrid, Madrid, Spain",
+                    "dirección": "Calle De La Lechuga, 28012 Madrid, Madrid.",
                     "nombre": "Ecotienda la Lechuga"
                     },
                     "geometry": {
@@ -782,7 +784,7 @@
                     "type": "Feature",
                     "properties": {
                     "accuracy": "point",
-                    "dirección": "Av Parque Palomeras Bajas 19b, 28018 Madrid, Madrid, Spain",
+                    "dirección": "Av Parque Palomeras Bajas 19b, 28018 Madrid, Madrid.",
                     "nombre": "Tomatomates"
                     },
                     "geometry": {
@@ -797,7 +799,7 @@
                 {
                     "type": "Feature",
                     "properties": {
-                    "dirección": "28912, Leganés, Madrid, Spain",
+                    "dirección": "28912, Leganés, Madrid.",
                     "nombre": "Mercadito Natural Alegría de la Huerta"
                     },
                     "geometry": {
@@ -812,7 +814,7 @@
                 {
                     "type": "Feature",
                     "properties": {
-                    "dirección": "28830, San Fernando de Henares, Madrid, Spain",
+                    "dirección": "28830, San Fernando de Henares, Madrid.",
                     "nombre": "Ecotienda Alegre"
                     },
                     "geometry": {
@@ -827,7 +829,7 @@
                 {
                     "type": "Feature",
                     "properties": {
-                    "dirección": "28500, Arganda del Rey, Madrid, Spain",
+                    "dirección": "28500, Arganda del Rey, Madrid.",
                     "nombre": "Tu Rincón Ecológico"
                     },
                     "geometry": {
@@ -842,7 +844,7 @@
                 {
                     "type": "Feature",
                     "properties": {
-                    "dirección": "10319, Tiétar, Cáceres, Spain",
+                    "dirección": "10319, Tiétar, Cáceres.",
                     "nombre": "Huerto Sostenible"
                     },
                     "geometry": {

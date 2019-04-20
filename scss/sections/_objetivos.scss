@@ -1,47 +1,68 @@
 #objetivos {
     @include section-default;
     margin-bottom: 15rem;
+    width: 85vw;
     .list-2{
         display: block;
     }
     .list-2-item{
         background-color: $blanco;
+        transition: all 200ms ease-out;
+        padding-top: 1em;
+        &:hover{
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px 1px $verde;
+            z-index: 5;
+        }
+    }
+    @include media("<=tablet","landscape"){
+        margin-bottom: 10rem;
+        .list-2{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+        }
+        .list-2-item{
+            flex: 1 1 auto;
+            max-width: 18rem;
+            width: 15rem;
+        }
     }
         @include media(">=desktop"){
-
+            width: 80vw;
             &::after{
                 @include pseudo-absolute;
                     background: url("/img/hoja-1_crop.png") no-repeat right;
                     background-position-y: bottom;
-                    bottom: -70vmin;
+                    bottom: -30vmin;
+                    z-index: -2;
             }
             justify-content: center;
-            padding-left: 25%;
-            padding-right: 16%;
             .text{
-                margin-left: -25%;
+                margin-left: 10vmin;
                 align-self: flex-start;
                 margin-bottom: 4em;
             }
             .list-2{
                 display: flex;
+                flex: .4 1 auto;
             }
             .list-2-item{
                 position: relative;
+                max-width: 30rem;
+                padding-top: 0em;
                 .img-2{
                     margin-right: 1rem;
                     margin-bottom: 0;
                 }
                 &::after {
                     @include pseudo-absolute;
-                    width: 100%;
-                    height: 100%;
+                    width: 60px;
+                    height: 60px;
                     bottom: -1rem;
                     right: -1rem;
                     border-bottom: 10px solid $verde;
                     border-right: 10px solid $verde;
-                    clip-path: polygon(80% 40%, 100% 40%, 100% 100%, 80% 100%);
-                    -webkit-clip-path: polygon(80% 40%, 100% 40%, 100% 100%, 80% 100%);
                 }
             }
         }

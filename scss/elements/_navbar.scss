@@ -3,7 +3,7 @@
     z-index: 999;
     background-color: transparent;
     position: fixed !important;
-    top: 20px;
+    top: 0px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -16,6 +16,12 @@
 
     .navbar-brand{
         flex: 0 0 auto;
+        font-family: $font-serif;
+        height: 100%;
+        img{
+            width: auto;
+            padding-right: .5em;
+        }
     }
     .navbar-nav{
         padding-top: 1rem;
@@ -36,12 +42,22 @@
                 }
             }
         }        
+        @include media("<=desktop","landscape"){
+            height: 84px;
+            .navbar-brand{
+                font-size: 1em;
+            }
+            .navbar-nav{
+                height: auto;
+            }
+        }
     }
     .sticky {
         opacity: 100;
     }
     @include media(">=tablet"){
         .navbar{
+            top: 20px;
             .navbar-nav {
                 flex-direction: row;
                 height: auto;

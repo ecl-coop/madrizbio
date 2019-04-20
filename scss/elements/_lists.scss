@@ -32,6 +32,14 @@
             }
         }
     }
+    @include media(">=hd"){
+        img{
+            margin-left: -9rem;
+        }
+        .heading-4 {
+            margin-top: -80px;
+        }
+    }
 }
 
 .list-2 {
@@ -54,15 +62,17 @@
     }
         @include media(">=desktop") {
             flex-direction: row;
-            justify-content: flex-end;
-            //padding-left: 25%;
+            justify-content: center;
+            
             &-item{
                 flex-direction: row;
                 text-align: left;
                 flex: 0 0 auto;
                 justify-content: flex-end;
+                width: max-content;
+                margin-right: 3rem;
                 img{
-                    flex: 0 0 auto;
+                    flex: 1 1 auto;
                 }
             }
         }

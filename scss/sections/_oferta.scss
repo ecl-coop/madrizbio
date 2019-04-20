@@ -20,6 +20,9 @@
         //padding-bottom: 7.5rem;
         margin-bottom: 1em;
     }
+    .heading-4{
+        color: $rojo;
+    }
     @include media(">=desktop"){
         &::before{
             background: url("/img/hoja-2_desktop.png") no-repeat left;

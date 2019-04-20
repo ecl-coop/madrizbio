@@ -15,7 +15,9 @@
     .card-group {
         display: grid;
         grid-template-columns: auto;
-        //grid-template-rows: min-content auto;
+        .heading-5{
+            margin-top: auto;
+        }
     }
 
     #madrid {
@@ -30,6 +32,9 @@
     .ficha-tienda {
         padding: .8em 1em;
         background-color: transparent;
+        .heading-6{
+            padding-top: 1em;
+        }
         .tienda-social{
             a{
             i{
@@ -66,8 +71,8 @@
             border: 2px solid $blanco;
             box-shadow: 0 1em .75em rgba(0, 0, 0, .20);
             border-radius: 1rem 1rem;
-            .img-fluid{
-                width: 100%;
+            .heading-6{
+                padding-top: .2em;
             }
         }
         .card-group{

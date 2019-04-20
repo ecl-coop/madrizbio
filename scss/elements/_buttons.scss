@@ -11,8 +11,14 @@
         width: 100%;
         height: 100%;
         font-size: 6vmin;
+        transition: all 200ms ease-out;
+        &:hover{
+            color: $verde;
+            filter: url(/img/iconos.svg#innershadow);
+        }
     }
     @include media(">=desktop"){
         bottom: 0;
+        height: auto;
     }
 }
