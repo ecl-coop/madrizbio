@@ -14,10 +14,16 @@ body {
   --brand-green: hsl(80.3, 63.3%, 44.9%);
   --black: hsl(0, 4%, 9.8%);
   --white: hsl(0, 0%, 100%);
+  font-family: 'Noto Sans SC',sans-serif;
   --font-primary: 'Noto Sans SC',sans-serif;
+  font-display: 'Roboto Slab', serif;
   --font-title: 'Roboto Slab', serif;
   --font-family-sans-serif: 'Noto Sans SC', sans-serif; }
 
+/*
+div {
+    @include fluid-type(font-size, 600px, 1200px, 16px, 32px);
+}*/
 .text {
   font-family: var(--font-primary);
   line-height: 1.66;
@@ -85,6 +91,9 @@ body {
       .heading-6 a:hover {
         color: var(--brand-green);
         filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.25)); }
+  @media (min-width: 500px) {
+    .heading-5 {
+      font-size: 4vmin; } }
   @media (min-width: 768px) {
     .heading-5 {
       font-size: 3vmin; } }
@@ -99,7 +108,7 @@ body {
       font-weight: 100;
       letter-spacing: .015em; }
     .heading-5 {
-      font-size: 4vmin;
+      font-size: 3.5vmin;
       text-decoration: none;
       text-align: center;
       z-index: 10; }
@@ -107,6 +116,9 @@ body {
       font-size: 1rem;
       margin-top: .5rem;
       margin-bottom: .25rem; } }
+  @media (min-width: 1580px) {
+    .heading-5 {
+      font-size: 4vmin; } }
 
 .img-1 {
   width: 9rem;
@@ -656,7 +668,9 @@ i {
 
 #directorio {
   background-color: var(--brand-red);
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-column-gap: 1vmin;
   grid-row-gap: 40px;
@@ -694,10 +708,21 @@ i {
         color: var(--brand-green); }
     #directorio .ficha-tienda .tienda-social a:not(:last-of-type) {
       margin-right: .8em; }
+  @media (min-width: 500px) {
+    #directorio {
+      align-items: end; } }
+  @media (min-width: 768px) {
+    #directorio .ficha-tienda {
+      height: 16rem; } }
+  @media screen and (min-width: 768px) and (min-width: 768px) {
+    #directorio .ficha-tienda {
+      height: calc(16rem + 4 * (100vw - 768px) / 812); } }
+  @media screen and (min-width: 768px) and (min-width: 1580px) {
+    #directorio .ficha-tienda {
+      height: 20rem; } }
   @media (min-width: 1025px) {
     #directorio {
       grid-template-columns: repeat(4, minmax(20%, 24%));
-      align-items: stretch;
       padding-top: 4vmax;
       padding-bottom: 8vmax; }
       #directorio #madrid {

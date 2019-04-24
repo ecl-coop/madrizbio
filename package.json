@@ -4,13 +4,15 @@
     "version": "0.0.1",
     "private": true,
     "dependencies": {
-        "autoprefixer": "^9.5.0",
+        "autoprefixer": "^9.5.1",
         "bootstrap": "^4.3.1",
-        "browser-sync": "^2.26.3",
+        "browser-sync": "^2.26.4",
         "chokidar-cli": "^1.2.2",
+        "clean-css": "^4.2.1",
+        "cssnano": "^4.1.10",
         "include-media": "^1.4.9",
         "intersection-observer": "^0.5.1",
-        "jquery": "^3.3.1",
+        "jquery": "^3.4.0",
         "jshint": "^2.10.2",
         "node-sass": "^4.11.0",
         "node-sass-chokidar": "^1.3.4",
@@ -25,9 +27,11 @@
         "start": "npm-run-all --parallel browser-sync build-sass watch-sass",
         "browser-sync": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' -w --directory --port 7777 --browser \"C:\\Users\\pc\\AppData\\Local\\Firefox Nightly\\firefox.exe\"",
         "build-sass": "node-sass scss/main.scss css/main.css",
-        "watch-sass": "node-sass -w scss/main.scss css/main.css"
+        "watch-sass": "node-sass -w scss/main.scss css/main.css",
+        "build": "postcss css/main.css > main_min.css"
     },
     "devDependencies": {
-        "@fortawesome/fontawesome-free": "^5.8.1"
+        "@fortawesome/fontawesome-free": "^5.8.1",
+        "@fullhuman/postcss-purgecss": "^1.2.0"
     }
 }

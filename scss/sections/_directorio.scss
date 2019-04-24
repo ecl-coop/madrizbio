@@ -1,6 +1,8 @@
 #directorio {
     background-color: $rojo;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-column-gap: 1vmin;
     grid-row-gap: 40px;
@@ -55,10 +57,17 @@
             }
         }  
     }
+    @include media(">=500px"){
+        align-items: end;
+    }
+    @include media(">=tablet"){
+        .ficha-tienda{
+            @include fluid-type(height, $tablet, $hd, 16rem, 20rem);
+        }
+    }
 
     @include media(">=desktop") {
         grid-template-columns: repeat(4, minmax(20%, 24%));
-        align-items: stretch;
         padding-top: 4vmax;
         padding-bottom: 8vmax;
         #madrid {
