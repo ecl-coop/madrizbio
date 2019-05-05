@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: master
+publish_mode: editorial_workflow
+media_folder: "img"
+collections:
+  - name: "directorio"
+    label: Tiendas
+    folder: "colecciones/_directorio"
+    create: true
+    slug: "{{year}}-{{month}}-{{slug}}"
+    fields:
+      - {label: "Nombre de la tienda", name: "title", widget: "string"}
+      - {label: "Región", name: "region", widget: "string"}
+      - {label: "Página web", name: "web", widget: "string"}
+      - {label: "Dirección", name: "address", widget: "string"}
+      - {label: "Teléfono", name: "phone", widget: "number"}
+      - {label: "Imagen de la tienda", name: "img_path", widget: "image"}
+      - {label: "Twitter", name: "twitter", widget: "string"}
+      - {label: "Facebook", name: "facebook", widget: "string"}
+      - {label: "Instagram", name: "instagram", widget: "string"}
+  - name: "objetivos"
+    label: Objetivos de MadrizBio
+    folder: "colecciones/_objetivos"
+    create: false
+  - name: "oferta"
+    label: Oferta de MadrizBio
+    folder: "colecciones/_oferta"
+    create: false
+  - name: "regiones"
+    label: Regiones
+    folder: "colecciones/_regiones"
+    create: true
+    slug: "{{year}}-{{month}}-{{slug}}"
+    fields:
+      - {label: "Nombre de la región", name: "title", widget: "string"}
