@@ -12,6 +12,7 @@ collections:
     folder: "colecciones/_directorio"
     create: true
     slug: "{{year}}-{{month}}_{{slug}}"
+    media_folder: "img/card-tiendas"
     fields:
       - {label: "Nombre de la tienda", name: "title", widget: "string"}
       - {label: "Región", name: "region", widget: "string"}
@@ -19,9 +20,9 @@ collections:
       - {label: "Dirección", name: "address", widget: "string"}
       - {label: "Teléfono", name: "phone", widget: "number"}
       - {label: "Imagen de la tienda", name: "img_path", widget: "image"}
-      - {label: "Twitter", name: "twitter", widget: "string"}
-      - {label: "Facebook", name: "facebook", widget: "string"}
-      - {label: "Instagram", name: "instagram", widget: "string"}
+      - {label: "Twitter", name: "twitter", widget: "string", required: false}
+      - {label: "Facebook", name: "facebook", widget: "string", required: false}
+      - {label: "Instagram", name: "instagram", widget: "string", required: false}
   - name: "objetivos"
     label: Objetivos de MadrizBio
     folder: "colecciones/_objetivos"
