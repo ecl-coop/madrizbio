@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1 shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MadrizBio Red de Tiendas de alimentación ecológica y comercio justo en Madrid</title>
+    <link rel="stylesheet" type="text/css" href="/build/main_min.css" media="screen">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,400,700|Roboto+Slab:100,400,700" rel="stylesheet">
+    <script type="text/javascript" src="/js/smoothscroll.js" async></script>
+    <script src="/js/intersection-observer.js"></script>
+    <script src="/js/lazyload.js"></script>
+    <script src="/js/css-var-polyfill.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    <meta property="og:site_name" content="MadrizBio">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http:madrizbio.es">
+    <meta property="og:description" content="Red de tiendas de comercio justo y sustentable">
+</head>
+<body>
+        <div class="container-fluid">
+            {{ content }}
+        </div>
+    <script type="text/javascript">
+        const scriptURL ='https://script.google.com/macros/s/AKfycbw5ISfT72ahi3yE6E7mmf5oXqTArXtiOw4q7OEBvmWncyHyxpOa/exec'
+        const form = document.forms['submit-to-google-sheet']
+        
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert("Gracias por contactarnos.", response))
+                .then($("#contact-form")[0].reset())
+                .catch(error => alert("Hubo un error. Por favor intente nuavemante", error.message))
+        });
+        
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="/js/waypoints.js"></script>
+    <script type="text/javascript" async>
+        $('.navbar-nav>a').on('click', function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+    </script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoibWVjaGFjb29wIiwiYSI6ImNqdTVtdjBwbzFhbmM0ZG56a3lxY2FudmQifQ.P08pWaz5nEoFgKAnO6r86g';
+
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/dark-v10',
+            center: [-3.703592838893087, 40.416784916604485],
+            zoom: 12
+        });
+
+        var geojson = {
+            type: "FeaturesCollection",
+                "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                    "accuracy": "street",
+                    "dirección": "Calle Giralda, 28903 Getafe, Madrid.",
+                    "nombre": "Biolibere"
+                    },
+                    "geometry": {
+                    "coordinates": [
+                    -3.713332,
+                    40.318459
+                    ],
+                    "type": "Point"
+                    },
+                    "id": "address.1104875359"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                    "accuracy": "street",
+                    "dirección": "Avenida Del Oeste 27, 28922 Alcorcón, Madrid.",
+                    "nombre": "Alma Ecológica"
+                    },
+                    "geometry": {
+                    "coordinates": [
+                    -3.827664,
+                    40.339927
+                    ],
+                    "type": "Point"
+                    },
+                    "id": "address.1313741414"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                    "accuracy": "point",
+                    "dirección": "Cl Cgdor Jose De Pasamonte 14, 28030 Madrid, Madrid.",
+                    "nombre": "Detrás del árbol"
+                    },
+                    "geometry": {
+                    "coordinates": [
+                    -3.647314,
+                    40.410607
+                    ],
+                    "type": "Point"
+                    },
+                    "id": "address.1420519441"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                    "accuracy": "point",
+                    "dirección": "Carrer Maria Moliner 10, 28702 San Sebastián de los Reyes, Madrid.",
+                    "nombre": "Bodevici"
+                    },
+                    "geometry": {
+                    "coordinates": [
+                    -3.613672,
+                    40.560467
+                    ],
+                    "type": "Point"
+                    },
+                    "id": "address.1563126969"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                    "dirección": "Cl Sierra Morena 31, 28031 Madrid, Madrid.",
+                    "nombre": "La Tienda de la Abuela"
+                    },
+                    "geometry": {
+                    "coordinates": [
+                    -3.623718,
+                    40.378081
+                    ],
+                    "type": "Point"
+                    },
+                    "id": "address.1638237641"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                    "accuracy": "point",
+                    "dirección": "Carrer Madrid 11, 28850 Torrejón de Ardoz, Madrid.",
+                    "nombre": "Ecológicos de Buena Semilla"
+                    },
+                    "geometry": {
+                    "coordinates": [
+                    -3.477019,
+                    40.463225
+                    ],
+                    "type": "Point"
+                    },
+                    "id": "address.1884358084"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                    "accuracy": "point",
+                    "dirección": "Cl Moratines 16, 28005 Madrid, Madrid.",
+                    "nombre": "Albahaca Ecotienda"
+                    },
+                    "geometry": {
+                    "coordinates": [
+                    -3.70365,
+                    40.403017
+                    ],
+                    "type": "Point"
+                    },
+                    "id": "address.1975548289"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                    "accuracy": "point",
+                    "dirección": "Cl Narvaez 59, 28009 Madrid, Madrid.",
+                    "nombre": "El Mercado Bueno"
+                    },
+                    "geometry": {
+                    "coordinates": [
+                    -3.675857,
+                    40.417457
+                    ],
+                    "type": "Point"
+                    },
+                    "id": "address.306508971"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                    "accuracy": "interpolated",
+                    "dirección": "Avenida Plaza De Toros 14, 28300 Aranjuez, Madrid.",
+                    "nombre": "Ecoalimentación Aranjuez"
+                    },
+                    "geometry": {
+                    "coordinates": [
+                    -3.600176,
+                    40.027994
+                    ],
+                    "type": "Point"
+                    },
+                    "id": "address.329923490"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                    "accuracy": "point",
+                    "dirección": "Calle Chorrillo Alta 29, 28860 Paracuellos de Jarama, Madrid.",
+                    "nombre": "Divina Natura"
+                    },
+                    "geometry": {
+                    "coordinates": [
+                    -3.532022,
+                    40.505716
+                    ],
+                    "type": "Point"
+                    },
+                    "id": "address.484073236"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                    "accuracy": "street",
+                    "dirección": "Cl Noviciado, 28015 Madrid, Madrid.",
+                    "nombre": "2decológico"
+                    },
+                    "geometry": {
+                    "coordinates": [
+                    -3.708295,
+                    40.425539
+                    ],
+                    "type": "Point"
+                    },
+                    "id": "address.516562337"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                    "accuracy": "street",
+                    "dirección": "Calle Del Corregidor Alonso De Tobar, 28030 Madrid, Madrid.",
+                    "nombre": "Artesanos del Sabor"
+                    },
+                    "geometry": {
+                    "coordinates": [
+                    -3.648487,
+                    40.403579
+                    ],
+                    "type": "Point"
+                    },
+                    "id": "address.53991907"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                    "accuracy": "street",
+                    "dirección": "Calle Lola Gaos, 28400 Collado Villalba, Madrid.",
+                    "nombre": "Tu Ecológica"
+                    },
+                    "geometry": {
+                    "coordinates": [
+                    -3.994254,
+                    40.646272
+                    ],
+                    "type": "Point"
+                    },
+                    "id": "address.705391917"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                    "accuracy": "street",
+                    "dirección": "Calle De La Lechuga, 28012 Madrid, Madrid.",
+                    "nombre": "Ecotienda la Lechuga"
+                    },
+                    "geometry": {
+                    "coordinates": [
+                    -3.7071,
+                    40.414334
+                    ],
+                    "type": "Point"
+                    },
+                    "id": "address.778336380"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                    "accuracy": "point",
+                    "dirección": "Av Parque Palomeras Bajas 19b, 28018 Madrid, Madrid.",
+                    "nombre": "Tomatomates"
+                    },
+                    "geometry": {
+                    "coordinates": [
+                    -3.659914,
+                    40.380304
+                    ],
+                    "type": "Point"
+                    },
+                    "id": "address.942776480"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                    "dirección": "28912, Leganés, Madrid.",
+                    "nombre": "Mercadito Natural Alegría de la Huerta"
+                    },
+                    "geometry": {
+                    "coordinates": [
+                    -3.76,
+                    40.33
+                    ],
+                    "type": "Point"
+                    },
+                    "id": "postcode.12468056929202040"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                    "dirección": "28830, San Fernando de Henares, Madrid.",
+                    "nombre": "Ecotienda Alegre"
+                    },
+                    "geometry": {
+                    "coordinates": [
+                    -3.53,
+                    40.43
+                    ],
+                    "type": "Point"
+                    },
+                    "id": "postcode.4879652051355500"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                    "dirección": "28500, Arganda del Rey, Madrid.",
+                    "nombre": "Tu Rincón Ecológico"
+                    },
+                    "geometry": {
+                    "coordinates": [
+                    -3.44,
+                    40.3
+                    ],
+                    "type": "Point"
+                    },
+                    "id": "postcode.5650300843757690"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                    "dirección": "10319, Tiétar, Cáceres.",
+                    "nombre": "Huerto Sostenible"
+                    },
+                    "geometry": {
+                    "coordinates": [
+                    -5.48,
+                    40.03
+                    ],
+                    "type": "Point"
+                    },
+                    "id": "postcode.5850845355969500"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                    "dirección": "Santa María de la Cabeza, 41 (Mercado Municipal Sta. María de la Cabeza), 28045, Madrid.",
+                    "nombre": "Es de Raíz"
+                    },
+                    "geometry": {
+                    "coordinates": [
+                    -3.7,
+                    40.4
+                    ],
+                    "type": "Point"
+                    },
+                    "id": "postcode.7648566983113870"
+                }
+            ]
+        };
+        // add markers to map
+        geojson.features.forEach(function(marker) {
+
+        // create a HTML element for each feature
+        var el = document.createElement('div');
+        el.className = 'marker';
+
+        // make a marker for each feature and add to the map
+        new mapboxgl.Marker(el)
+        .setLngLat(marker.geometry.coordinates)
+        new mapboxgl.Marker(el)
+        .setLngLat(marker.geometry.coordinates)
+        .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+        .setHTML('<h3>' + marker.properties.nombre + '</h3><p>' + marker.properties.dirección + '</p>'))
+        .addTo(map);
+
+        //.addTo(map);
+        });
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

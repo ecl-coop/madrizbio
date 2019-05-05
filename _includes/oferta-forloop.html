@@ -1,0 +1,14 @@
+<section class="row" id="oferta">
+    <h1 class="heading heading-1">Nuestras tiendas<span class="heading-2"> te ofrecen<span></h1>
+    <dl class="row list-1">
+        {% for oferta in site.oferta %}
+        <dt class="list-1-item">
+            <img  src="/img/img-placeholder.png" data-src="{{ oferta.img_path }}" data-srcset="{{ oferta.img_path }} 1x" alt="imagen-{{ oferta.title }} " class="img-1 lazy">
+            <h4 class="heading-4">{{ oferta.title }}</h4>
+            <p class="text text-3"> {{ oferta.content | markdownify }} </p>
+            <a href="">ver marcas</a>
+        </dt>
+        {% endfor %}
+    </dl>
+    <a class="down-button" href="#mapa-tiendas"><i class="fas fa-chevron-down"></i></a>
+</section>

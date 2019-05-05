@@ -1,0 +1,15 @@
+<section class="row" id="unirte">
+    <h2 class="heading heading-1">¿Quieres unirte a <span class="heading-2">nuestra red?</span></h2>
+    <p class="text text-2">Si tienes una tienda de alimentación ecológica, MadrizBio es tu espacio.<br>Estos son los valores bajo los que
+        trabajamos:</p>
+    <dl class="row list-1">
+        {% for razon in site.unirse %}
+        <dt class="list-1-item">
+            <img src="/img/img-placeholder.png" data-src="{{ razon.img_path }}" data-srcset="{{ razon.img_path }} 1x" alt="imagen-{{ razon.title }}" class="img-1 lazy">
+            <h4 class="heading-4">{{ razon.title }}</h4 class="heading-4">
+            <p class="text text-3">{{ razon.content }}</p>
+        </dt>
+        {% endfor %}
+    </dl>
+    <p class="text text-2">Contacta con nosotros para más información.<br> Te atenderemos lo antes posible.</p>
+</section>

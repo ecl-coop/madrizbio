@@ -1,0 +1,14 @@
+markdown: kramdown
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge
+
+collections_dir: colecciones
+collections:
+  objetivos:
+  directorio:
+  unirse:
+  oferta:
+  regiones:

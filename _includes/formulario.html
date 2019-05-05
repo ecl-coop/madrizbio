@@ -1,0 +1,38 @@
+<section class="row" id="contacto">
+    <form name="submit-to-google-sheet" class="row" id="contact-form">
+        <header class="form-header">
+            <h3 class="heading heading-3">contáctanos</h3>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input name="interes" value="consulta general" type="radio" class="custom-control-input" id="check-consulta">
+                <label class="custom-control-label" for="check-consulta">tengo una consulta general</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input name="interes" value="quiero asociar" type="radio" class="custom-control-input" id="check-asociar">
+                <label class="custom-control-label" for="check-asociar">quiero asociar mi tienda</label>
+            </div>
+        </header>
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input name="nombre" type="text" class="form-control rounded-pill" placeholder="nombre" id="nombre" required="required">
+        </div>
+        <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input name="email" type="email" class="form-control rounded-pill" placeholder="nombre@ejemplo.com" id="email" required="required">
+        </div>
+        <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input name="tel" type="tel" class="form-control rounded-pill" placeholder="teléfono" id="telefono" required="required">
+        </div>
+        <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="msj" class="form-control rounded" rows="6" placeholder="su mensaje por favor" id="mensaje" required="required"></textarea>
+        </div>
+        <input type="submit" class="btn btn-danger" value="enviar" onClick="clearform();"></button>
+    </form>    
+    <footer class="row">
+        <div class="logo">
+            <a href="#intro"><img class="img-fluid" src="/img/madbi_logo.svg" alt="MadrizBio Logo"></a> 
+        </div>
+        <small class="text-5"><a href="mailto:madrizbio@madrizbio.es">madrizbio@madrizbio.es</a></small>
+    </footer>
+</section>
