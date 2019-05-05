@@ -29,7 +29,7 @@ collections:
     fields:
       - {label: "Objetivo", name: "title", widget: "string"}
       - {label: "Icon", name: "icon", widget: "hidden"}
-      - {label: "Descripción objetivo", name: "content", widget: "markdown"}
+      - {label: "Descripción objetivo", name: "body", widget: "markdown"}
   - name: "oferta"
     label: Oferta de MadrizBio
     folder: "colecciones/_oferta"
@@ -37,7 +37,7 @@ collections:
     fields:
       - {label: "Título oferta", name: "title", widget: "string"}
       - {label: "Imagen Oferta", name: "img_path", widget: "image"}
-      - {label: "Descripción oferta", name: "content", widget: "markdown"}
+      - {label: "Descripción oferta", name: "body", widget: "markdown"}
   - name: "regiones"
     label: Regiones
     folder: "colecciones/_regiones"
