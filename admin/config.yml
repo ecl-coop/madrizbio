@@ -3,12 +3,15 @@ backend:
   branch: master
 publish_mode: editorial_workflow
 media_folder: "img"
+site_url: https://madrizbio.netlify.com
+display_url: https://madrizbio.netlify.com
+logo_url: img/mabdi_logo.svg
 collections:
-  - name: "directorio"
+  - name: directorio
     label: Tiendas
     folder: "colecciones/_directorio"
     create: true
-    slug: "{{year}}-{{month}}-{{slug}}"
+    slug: "{{year}}-{{month}}_{{slug}}"
     fields:
       - {label: "Nombre de la tienda", name: "title", widget: "string"}
       - {label: "Región", name: "region", widget: "string"}
@@ -23,14 +26,20 @@ collections:
     label: Objetivos de MadrizBio
     folder: "colecciones/_objetivos"
     create: false
+    fields:
+      - {label: "Objetivo", name: "title", widget: "hidden"}
+      - {label: "Icon", name: "icon", widget: "hidden"}
   - name: "oferta"
     label: Oferta de MadrizBio
     folder: "colecciones/_oferta"
     create: false
+    fields:
+      - {label: "Título oferta", name: "title", widget: "string"}
+      - {label: "Imagen Oferta", name: "img_path", widget: "image"}
   - name: "regiones"
     label: Regiones
     folder: "colecciones/_regiones"
     create: true
-    slug: "{{year}}-{{month}}-{{slug}}"
+    slug: "{{year}}-{{month}}_{{slug}}"
     fields:
       - {label: "Nombre de la región", name: "title", widget: "string"}
