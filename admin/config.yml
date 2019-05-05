@@ -11,7 +11,7 @@ collections:
     label: Tiendas
     folder: "colecciones/_directorio"
     create: true
-    slug: "{{year}}-{{month}}_{{slug}}"
+    slug: "{{slug}}"
     media_folder: "img/card-tiendas"
     fields:
       - {label: "Nombre de la tienda", name: "title", widget: "string"}
