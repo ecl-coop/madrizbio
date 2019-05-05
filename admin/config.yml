@@ -43,6 +43,6 @@ collections:
     label: Regiones
     folder: "colecciones/_regiones"
     create: true
-    slug: "{{year}}-{{month}}_{{slug}}"
+    slug: "{{slug}}"
     fields:
       - {label: "Nombre de la región", name: "title", widget: "string"}
