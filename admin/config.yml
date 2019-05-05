@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master
 publish_mode: editorial_workflow
-media_folder: "img"
+media_folder: "img/uploads"
 site_url: https://madrizbio.netlify.com
 display_url: https://madrizbio.netlify.com
 logo_url: "/img/mabdi_logo.png"
@@ -16,10 +16,10 @@ collections:
     fields:
       - {label: "Nombre de la tienda", name: "title", widget: "string"}
       - {label: "Región", name: "region", widget: "string"}
-      - {label: "Página web", name: "web", widget: "string"}
+      - {label: "Página web", name: "web", widget: "string", required: false}
       - {label: "Dirección", name: "address", widget: "string"}
-      - {label: "Teléfono", name: "phone", widget: "number"}
-      - {label: "Imagen de la tienda", name: "img_path", widget: "image"}
+      - {label: "Teléfono", name: "phone", widget: "string"}
+      - {label: "Imagen de la tienda", name: "img_path", widget: "image", required: false}
       - {label: "Twitter", name: "twitter", widget: "string", required: false}
       - {label: "Facebook", name: "facebook", widget: "string", required: false}
       - {label: "Instagram", name: "instagram", widget: "string", required: false}
