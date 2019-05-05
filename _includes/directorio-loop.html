@@ -1,0 +1,23 @@
+<section class="row" id="directorio">
+    {% for region in site.regiones %}
+        {% if region.title == "Madrid" %} 
+            <div class="card-group" id="madrid">
+                <h5 class="heading heading-5"> {{ region.title }} </h5>
+                {% for tienda in site.directorio %}
+                    {% if region.title == tienda.region %}    
+                        {% include ficha-tienda.html %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+            {% else %}
+            <div class="card-group">
+                <h5 class="heading heading-5"> {{ region.title }} </h5>
+                {% for tienda in site.directorio %}
+                    {% if region.title == tienda.region %}    
+                        {% include ficha-tienda.html %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endfor %}
+</section>
