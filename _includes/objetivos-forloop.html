@@ -10,7 +10,7 @@
                 <use xlink:href="{{ objetivo.icon }}"></use>
                 </svg>
             </div>
-            <p class="list-2-text">{{ objetivo.content | markdownify }}</p>
+            <div class="list-2-text">{{ objetivo.content | markdownify }}</div>
         </dt>
         {% endfor %}
     </dl>

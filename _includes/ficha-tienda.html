@@ -7,13 +7,13 @@
     <h6 class="heading heading-6"><a href="{{ tienda.web }}">{{ tienda.title }}</a></h5>
     <address class="text-5">{{ tienda.address }}</address>
     <div class="tienda-social">
-        {% unless tienda.instagram == blank %}
+        {% unless tienda.instagram == "" or tienda.instagram == nil %}
             <a href="https://www.instagram.com/{{ tienda.instagram }}"><i class="fab fa-instagram"></i></a>
         {% endunless %}
-        {% unless tienda.twitter == blank %}
+        {% unless tienda.twitter == "" or tienda.twitter == nil %}
             <a href="https://twitter.com/{{ tienda.twitter }}"><i class="fab fa-twitter"></i></a> 
         {% endunless %}
-        {% unless tienda.facebook== blank %}
+        {% unless tienda.facebook== "" or tienda.facebook == nil %}
             <a href="https://www.facebook.com/{{ tienda.facebook }}"><i class="fab fa-facebook"></i></a>
         {% endunless %}
         <a href="tel:{{ tienda.phone }}"><i class="fas fa-phone-square"></i></a>

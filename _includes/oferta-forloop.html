@@ -5,8 +5,8 @@
         <dt class="list-1-item">
             <img  src="/img/img-placeholder.png" data-src="{{ oferta.img_path }}" data-srcset="{{ oferta.img_path }} 1x" alt="imagen-{{ oferta.title }} " class="img-1 lazy">
             <h4 class="heading-4">{{ oferta.title }}</h4>
-            <p class="text text-3"> {{ oferta.content | markdownify }} </p>
-            <a href="">ver marcas</a>
+            <div class="text text-3"> {{ oferta.content | markdownify }} </div>
+            <a href="">ver mas</a>
         </dt>
         {% endfor %}
     </dl>
