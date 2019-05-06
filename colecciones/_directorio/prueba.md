@@ -1,6 +1,6 @@
 ---
 title: Prueba
-region: getafe
+region: Getafe
 address: 'Prueba '
 phone: '12345'
 ---
