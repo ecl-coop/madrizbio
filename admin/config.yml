@@ -1,11 +1,14 @@
 backend:
   name: git-gateway
   branch: master
-
 media_folder: "img/uploads"
 site_url: https://madrizbio.netlify.com
 display_url: https://madrizbio.netlify.com
 logo_url: "/img/mabdi_logo.png"
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "_"
 collections:
   - name: directorio
     label: Tiendas
@@ -39,6 +42,14 @@ collections:
       - {label: "Título oferta", name: "title", widget: "string"}
       - {label: "Imagen Oferta", name: "img_path", widget: "image"}
       - {label: "Descripción oferta", name: "body", widget: "markdown"}
+  - name: "unirse"
+    label: Razones para unirse a MadrizBio
+    folder: "colecciones/_unirse"
+    create: false
+    fields:
+      - {label: "Título razón", name: "title", widget: "string"}
+      - {label: "Imagen razón", name: "img_path", widget: "image"}
+      - {label: "Argumento", name: "body", widget: "markdown"}
   - name: "regiones"
     label: Regiones
     folder: "colecciones/_regiones"
